@@ -1,0 +1,443 @@
+/* General Style-Settings */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "DM Sans", "sans-serif";
+    color: #7B88A8;
+    /* border: 1px solid green; */
+}
+
+body {
+    background-color: #FFF0E2;
+}
+
+
+/* Navigation Bar */
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: #FFF0E2;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px 10px #ccbfb2;
+    z-index: 1;
+}
+
+.nav-wrapper {
+    width: 1500px;
+    margin-left: 30px;
+    margin-right: 40px;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+}
+
+#nav-indirect-spacer {
+    height: 75px;
+    width: 100vw;
+    z-index: -1;
+}
+
+.nav-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gkg-logo {
+    height: 45px;
+    width: auto;
+    margin-left: 20px;
+}
+
+#adh-logo {
+    height: 45px;
+    width: auto;
+}
+
+.nav-contents {
+    display: flex;
+    align-items: center;
+}
+
+#nav-links {
+    margin-right: 50px;
+    width: 450px;
+}
+
+#nav-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-links li {
+    list-style-type: none;
+}
+
+#nav-links a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: color 0.3s ease;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#nav-links a:hover {
+    color: #F14014;
+}
+
+.nav-cta {
+    width: 140px;
+    height: 45px;
+    background-color: #F14014;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    color: white;
+    font-weight: 400;
+}
+
+#hamburger-icon {
+    display: none;
+    width: 20px;
+    height: auto;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.line-1,
+.line-2,
+.line-3 {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}
+
+.line-2 {
+    margin: 4px 0px;
+}
+
+#mobile-opened {
+    display: none;
+    background-color: #FFF0E2;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+}
+
+#menu-closer {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 30px;
+    top: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#menu-closer img {
+    width: 20px;
+    -webkit-touch-callout: none;
+}
+
+.menu-content-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-text:nth-child(n+2) {
+    margin-top: 20px;
+}
+
+.menu-text a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #070930;
+    padding: 5px 0px;
+}
+
+.text-1 a {
+    color: #F14014;
+}
+
+.menu-text-drop-2,
+.menu-text-drop-3,
+.menu-text-drop-4,
+.menu-text-drop-5,
+.menu-text-drop-6 {
+    display: none;
+}
+
+
+/* Hero Section */
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF0E2;
+    height: 90vh;
+    border: 1px solid purple;
+}
+
+.hero-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1350px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 0px;
+}
+
+.hero-content-wrapper {
+    margin-top: 70px;
+    margin-right: 50px;
+}
+
+.normal-header-text {
+    font-size: 90px;
+    color: #070930;
+}
+
+.next-line {
+    display: flex;
+    align-items: center;
+}
+
+.special-content {
+    margin-left: 20px;
+    position: relative;
+}
+
+.special-content-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hashtag {
+    width: 90px;
+}
+
+#underline {
+    position: absolute;
+    bottom: 0px;
+    right: -35px;
+    width: 90%;
+}
+
+#youthful {
+    font-family: "Ink Free";
+    font-weight: 600;
+    font-size: 110px;
+    color: #F14014;
+}
+
+.hero-cta-wrapper {
+    margin-top: 50px;
+}
+
+.hero-cta {
+    width: 140px;
+    height: 45px;
+    background-color: #F14014;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    color: white;
+    font-weight: 400;
+}
+
+.hero-image-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-image-wrapper img {
+    width: 100%;
+}
+
+.brush-section {
+    background-color: white;
+}
+
+.brush-section img {
+    width: 100%;
+    background-color: white;
+}
+
+.further {
+    height: 400vh;
+    background-color: white;
+}
+
+
+/* Shrinking down hero header-content */
+
+@media (max-width: 1250px) {
+    .normal-header-text {
+        font-size: 70px;
+    }
+    #hashtag {
+        width: 70px;
+    }
+    #youthful {
+        font-size: 90px;
+    }
+}
+
+
+/* Removing GKG-Logo */
+
+@media (max-width: 1100px) {
+    #gkg-logo {
+        display: none;
+    }
+    #adh-logo {
+        margin-right: 50px;
+    }
+    #nav-links {
+        width: 400px;
+    }
+}
+
+
+/* Positioning hero content on vertical axis */
+
+@media (max-width: 900px) {
+    .hero-wrapper {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .hero-content-wrapper {
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 4vh;
+    }
+    .next-line {
+        justify-content: center;
+    }
+    .hero-image-wrapper {
+        max-width: 500px;
+    }
+    .hero-cta-wrapper {
+        display: none;
+    }
+}
+
+
+/* Tablet Breakpoint */
+
+@media (max-width: 770px) {
+    /* Navigation Bar */
+    .nav-wrapper {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #nav-links {
+        display: none;
+    }
+    #hamburger-icon {
+        display: block;
+    }
+    /* hero section */
+}
+
+
+/* shrinking down hero header-content for mobile */
+
+@media (max-width: 500px) {
+    .normal-header-text {
+        font-size: 50px;
+    }
+    #hashtag {
+        width: 60px;
+    }
+    #youthful {
+        font-size: 70px;
+    }
+    #underline {
+        right: 0%;
+        width: 80%;
+    }
+    .special-content {
+        margin-left: 5px;
+    }
+}
+
+
+/* Mobile Breakpoint */
+
+@media (max-width: 420px) {
+    /* Navigation Bar */
+    .nav-wrapper {
+        height: 60px;
+        margin-left: 13px;
+        margin-right: 13px;
+    }
+    #nav-indirect-spacer {
+        height: 60px;
+    }
+    #adh-logo {
+        height: 40px;
+    }
+    .nav-cta {
+        width: 130px;
+        height: 35px;
+    }
+    #hamburger-icon {
+        margin-left: 10px;
+    }
+    #menu-closer {
+        right: 15px;
+        top: 20px;
+    }
+    .menu-text a {
+        font-size: 1.3rem;
+    }
+    .menu-text img {
+        width: 20px;
+    }
+    .menu-content-wrapper {
+        height: 95%;
+    }
+    /* hero section */
+    .hero-wrapper {
+        margin-left: 13px;
+        margin-right: 13px;
+    }
+}
