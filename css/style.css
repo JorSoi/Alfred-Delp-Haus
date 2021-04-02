@@ -432,6 +432,85 @@ nav {
     }
 
 
+    /* Content-section-2 */
+    .content-section-2 {
+        width: 100%;
+        background-color: white;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 650px;
+        overflow: hidden;
+    }
+
+    .content-section-wrapper-2 {
+        position: relative;
+        z-index: 1;
+        max-width: 1140px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .section-image-wrapper-2 {
+        max-width: 550px;
+        min-width: 400px;
+        margin-left: 5%;
+    }
+
+    .section-image-wrapper-2 img {
+        width: 100%;
+    }
+    .section-text-wrapper-2 {
+        max-width: 600px;
+    }
+
+    .section-text-wrapper-2 h6 {
+        color: #537D42;
+        margin-bottom: 6px;
+        letter-spacing: 0.1rem;
+    }
+
+    .section-text-wrapper-2 h2 {
+        font-size: 45px;
+        line-height: 3rem;
+        color: #070930;
+        max-width: 450px;
+        position: relative;
+    }
+
+    .section-text-wrapper-2 p {
+        font-size: 17px;
+        margin-top: 10px;
+    }
+
+    #section-2-hashtag {
+        position: absolute;
+        width: 100px;
+        bottom: -40px;
+        right: -110px;
+    }
+
+    #section-2-drop {
+        width: 50px;
+        position: absolute;
+        top: -80px;
+        left: -50px;
+    }
+
+    #div-decoration-2 {
+        position: absolute;
+        right: 0px;
+        z-index: 0;
+        width: 30%;
+        height: 90%;
+        background-color: #E7E9E3;
+        clip-path: polygon(0 4%, 61% 0, 100% 3%, 100% 100%, 42% 96%, 3% 100%, 0 81%, 2% 21%);
+    }
+
 
 
 
@@ -454,7 +533,8 @@ nav {
 
 
 /* Shrinking down hero header-content */
-/* Removing heart icon from content section 1 */
+/* Removing heart icon and hastag from content section 1 and 2 */
+/* Relocating section 2 drop */
 @media (max-width: 1250px) {
 
     /* header content */
@@ -470,9 +550,18 @@ nav {
         font-size: 90px;
     }
 
-    /* heart icon */
-    #heart-icon {
+    /* section 1 heart icon; section 2 hastag */
+    #heart-icon,
+    #section-2-hashtag {
         display: none;
+    }
+
+    /* section 2 drop */
+    #section-2-drop {
+        transform: scale(-1, 1);
+        top: -50px;
+        left: unset;
+        right: -20px;
     }
 }
 
@@ -496,23 +585,34 @@ nav {
 @media (max-width: 1000px) {
 
     /* section 1 */
-    .content-section-1 {
-        justify-content: unset;
-    }
-
-    .content-section-wrapper-1 {
+    .content-section-wrapper-1,
+    .content-section-wrapper-2 {
         display: block;
         margin-left: 2vw;
         margin-right: 2vw;
+        margin-bottom: 150px;
     }
 
-    .section-image-wrapper-1 {
+    .section-image-wrapper-1,
+    .section-image-wrapper-2 {
         margin-right: 0px;
+        margin-left: 0px;
     }
 
     .section-text-wrapper-1 {
         margin-top: 30px;
         max-width: 90%;
+    }
+
+    .section-text-wrapper-2 {
+        margin-bottom: 30px;
+        max-width: 90%;
+    }
+
+    #div-decoration-1,
+    #div-decoration-2 {
+        width: 50%;
+        height: 60%;
     }
 
     /* nav wrapper */
@@ -568,18 +668,22 @@ nav {
         display: block;
     }
 
-    /* Reducing bottom margin at introduction wrapper */
-    .introduction-wrapper {
+    /* Reducing bottom margin at introduction wrapper 1 & 2 */
+    .introduction-wrapper,
+    .content-section-wrapper-1,
+    .content-section-wrapper-2 {
         margin-bottom: 75px;
     }
 
-    /* Content section one background div adjustment */
-    #div-decoration-1 {
+    /* Content section 1 and 2 background div adjustment */
+    #div-decoration-1,
+    #div-decoration-2 {
         width: 90%;
         height: 60%;
     }
 
-    .section-text-wrapper-1 {
+    .section-text-wrapper-1,
+    .section-text-wrapper-2 {
         max-width: 100%;
     }
 }
@@ -609,8 +713,8 @@ nav {
     }
 
     /* Section content drop */
-    #section-1-drop,
-    #span-1 {
+    #span-1,
+    #span-2 {
         display: none;
     }
 }
@@ -684,7 +788,8 @@ nav {
         height: 50%;
     }
 
-    .section-image-wrapper-1 {
+    .section-image-wrapper-1,
+    .section-image-wrapper-2 {
         min-width: unset;
     }
 }
