@@ -20,7 +20,10 @@ const closing = () => {
 hamburgerIcon.addEventListener('click', opening)
 menuCloser.addEventListener('click', closing);
 
-//Click Interactions mobile menu
+
+
+
+//Click Interactions mobile menu open
 const menuTextDrop1 = document.querySelectorAll('.menu-text-drop-1');
 const menuTextDrop2 = document.querySelectorAll('.menu-text-drop-2');
 const menuTextDrop3 = document.querySelectorAll('.menu-text-drop-3');
@@ -97,43 +100,138 @@ link6.addEventListener('click', click6);
 
 
 
-// Animating slideshow
-const imageContainer = document.getElementById('slideshow-image-container');
-const buttonLeft = document.querySelector('.button-left');
-const buttonRight = document.querySelector('.button-right');
-let index = 0;
 
-const slideRightAnimation = () => {
-    index += 100;
+
+
+
+
+// Trigger slideshow 1
+const triggerSlideshow1 = () => {
+    const img1 = document.getElementById('img1');
+    const buttonLeft1 = document.querySelector('.nav-left-1');
+    const buttonRight1 = document.querySelector('.nav-right-1');
+    let multiplier1 = 0;
     clearInterval(automove);
-    automove = setInterval(slideRightAnimation, '20000');
-    if (index > 500) {
-        imageContainer.style.marginLeft = '0';
-        index = 0;
-    } else {
-        imageContainer.style.marginLeft = `-${index}%`;
+
+    const slideRightAnimation = () => {
+        multiplier1 += 100;
+        clearInterval(automove);
+        automove = setInterval(slideRightAnimation, '5000');
+        if (multiplier1 > 500) {
+            img1.style.marginLeft = '0';
+            multiplier1 = 0;
+        } else {
+            img1.style.marginLeft = `-${multiplier1}%`;
+        }
     }
-    displaySlideShowCounter();
-    
+
+    const slideLeftAnimation = () => {
+        multiplier1 -= 100;
+        clearInterval(automove);
+        automove = setInterval(slideRightAnimation, '5000');
+        if (multiplier1 < 0) {
+            img1.style.marginLeft = '-500%';
+            multiplier1 = 500; 
+        } else {
+        img1.style.marginLeft = `-${multiplier1}%`;
+        }
+    }
+
+    buttonRight1.addEventListener('click', slideRightAnimation);
+    buttonLeft1.addEventListener('click', slideLeftAnimation);
+    var automove = setInterval(slideRightAnimation, '5000');
+    clearInterval(automove);
+    automove = setInterval(slideRightAnimation, '5000');
+
 }
 
-const slideLeftAnimation = () => {
-    index -= 100;
+
+
+
+
+
+// Trigger slideshow 2
+const triggerSlideshow2 = () => {
+    const img7 = document.getElementById('img7');
+    const buttonLeft2 = document.querySelector('.nav-left-2');
+    const buttonRight2 = document.querySelector('.nav-right-2');
+    let multiplier2 = 0;
     clearInterval(automove);
-    automove = setInterval(slideRightAnimation, '20000');
-    if (index < 0) {
-        imageContainer.style.marginLeft = '-500%';
-        index = 500; 
-    } else {
-        imageContainer.style.marginLeft = `-${index}%`;
+
+    const slideRightAnimation = () => {
+        multiplier2 += 100;
+        clearInterval(automove);
+        automove = setInterval(slideRightAnimation, '5000');
+        if (multiplier2 > 500) {
+            img7.style.marginLeft = '0';
+            multiplier2 = 0;
+        } else {
+            img7.style.marginLeft = `-${multiplier2}%`;
+        }
     }
-    displaySlideShowCounter();
-    
+
+    const slideLeftAnimation = () => {
+        multiplier2 -= 100;
+        clearInterval(automove);
+        automove = setInterval(slideRightAnimation, '5000');
+        if (multiplier2 < 0) {
+            img7.style.marginLeft = '-500%';
+            multiplier2 = 500; 
+        } else {
+        img7.style.marginLeft = `-${multiplier2}%`;
+        }
+    }
+
+    buttonRight2.addEventListener('click', slideRightAnimation);
+    buttonLeft2.addEventListener('click', slideLeftAnimation);
+    var automove = setInterval(slideRightAnimation, '5000');
+    clearInterval(automove);
+    automove = setInterval(slideRightAnimation, '5000');
 }
 
-buttonRight.addEventListener('click', slideRightAnimation);
-buttonLeft.addEventListener('click', slideLeftAnimation);
-var automove = setInterval(slideRightAnimation, '2000');
+
+
+
+// Trigger slideshow 3
+const triggerSlideshow3 = () => {
+    const img13 = document.getElementById('img13');
+    const buttonLeft3 = document.querySelector('.nav-left-3');
+    const buttonRight3 = document.querySelector('.nav-right-3');
+    let multiplier3 = 0;
+    clearInterval(automove);
+
+    const slideRightAnimation = () => {
+        multiplier3 += 100;
+        clearInterval(automove);
+        automove = setInterval(slideRightAnimation, '5000');
+        if (multiplier3 > 500) {
+            img13.style.marginLeft = '0';
+            multiplier3 = 0;
+        } else {
+            img13.style.marginLeft = `-${multiplier3}%`;
+        }
+    }
+
+    const slideLeftAnimation = () => {
+        multiplier3 -= 100;
+        clearInterval(automove);
+        automove = setInterval(slideRightAnimation, '5000');
+        if (multiplier3 < 0) {
+            img13.style.marginLeft = '-500%';
+            multiplier3 = 500; 
+        } else {
+        img13.style.marginLeft = `-${multiplier3}%`;
+        }
+    }
+
+    buttonRight3.addEventListener('click', slideRightAnimation);
+    buttonLeft3.addEventListener('click', slideLeftAnimation);
+    var automove = setInterval(slideRightAnimation, '5000');
+    clearInterval(automove);
+    automove = setInterval(slideRightAnimation, '5000');
+}
+
+
 
 
 
@@ -142,164 +240,162 @@ var automove = setInterval(slideRightAnimation, '2000');
 const hausausstattung = document.getElementById('hausausstattung');
 const selectorText1 = document.getElementById('selector-text-1');
 const selectorUnderline1 = document.getElementById('selector-underline-1');
-const slideShowHausausstattung = document.getElementById('slideshow-hausausstattung');
+const slideshow1 = document.querySelector('.slideshow-1');
 
 const stockwerksausstattung = document.getElementById('stockwerksausstattung');
 const selectorText2 = document.getElementById('selector-text-2');
 const selectorUnderline2 = document.getElementById('selector-underline-2');
-const slideShowStockwerksausstattung = document.getElementById('slideshow-stockwerksausstattung');
+const slideshow2 = document.querySelector('.slideshow-2');
 
 const zimmerausstattung = document.getElementById('zimmerausstattung');
 const selectorText3 = document.getElementById('selector-text-3');
 const selectorUnderline3 = document.getElementById('selector-underline-3');
-const slideShowZimmerausstattung = document.getElementById('slideshow-zimmerausstattung');
+const slideshow3 = document.querySelector('.slideshow-3');
 
 
-// Default selector state
-selectorText1.style.color = '#070930';
-selectorUnderline1.style.display = 'unset';
-slideShowHausausstattung.style.display = 'flex';
 
+
+
+
+
+// Trigger slideshow 1
 const openSlideshow1 = () => {
-    // General setting configs
-    index = 0;
-    displaySlideShowCounter();
-    imageContainer.style.marginLeft = '0';
-    clearInterval(automove);
-    automove = setInterval(slideRightAnimation, '4000');
-
-    
 
     // Slideshow 1 activated
+    triggerSlideshow1();
     selectorText1.style.color = '#070930';
     selectorUnderline1.style.display = 'block'
-    slideShowHausausstattung.style.display = 'flex';
+    slideshow1.style.display = 'flex';
 
     //Other slideshows deactivated
     selectorText2.style.color = '';
     selectorUnderline2.style.display = ''
-    slideShowStockwerksausstattung.style.display = '';
+    slideshow2.style.display = '';
 
     selectorText3.style.color = '';
     selectorUnderline3.style.display = ''
-    slideShowZimmerausstattung.style.display = '';
+    slideshow3.style.display = '';
 }
 
+
+
 const openSlideshow2 = () => {
-    // General setting configs
-    index = 0;
-    displaySlideShowCounter();
-    imageContainer.style.marginLeft = '0';
-    clearInterval(automove);
-    automove = setInterval(slideRightAnimation, '4000');
-    // Slideshow 1 activated
+
+    // Slideshow 2 activated
+    triggerSlideshow2();
     selectorText2.style.color = '#070930';
     selectorUnderline2.style.display = 'block'
-    slideShowStockwerksausstattung.style.display = 'flex';
+    slideshow2.style.display = 'flex';
 
     //Other slideshows deactivated
     selectorText1.style.color = '';
     selectorUnderline1.style.display = ''
-    slideShowHausausstattung.style.display = '';
+    slideshow1.style.display = '';
 
     selectorText3.style.color = '';
     selectorUnderline3.style.display = ''
-    slideShowZimmerausstattung.style.display = '';
+    slideshow3.style.display = '';
 }
 
 const openSlideshow3 = () => {
-    // General setting configs
-    index = 0;
-    displaySlideShowCounter();
-    imageContainer.style.marginLeft = '0';
-    clearInterval(automove);
-    automove = setInterval(slideRightAnimation, '4000');
 
     // Slideshow 1 activated
+    triggerSlideshow3();
     selectorText3.style.color = '#070930';
     selectorUnderline3.style.display = 'block'
-    slideShowZimmerausstattung.style.display = 'flex';
+    slideshow3.style.display = 'flex';
 
     //Other slideshows deactivated
     selectorText1.style.color = '';
     selectorUnderline1.style.display = ''
-    slideShowHausausstattung.style.display = '';
+    slideshow1.style.display = '';
 
     selectorText2.style.color = '';
     selectorUnderline2.style.display = ''
-    slideShowStockwerksausstattung.style.display = '';
-
+    slideshow2.style.display = '';
 }
-
 
 hausausstattung.addEventListener('click', openSlideshow1);
 stockwerksausstattung.addEventListener('click', openSlideshow2);
 zimmerausstattung.addEventListener('click', openSlideshow3);
 
 
+// By default slideshow 1 activated
+openSlideshow1();
+slideshow1.style.display = 'flex';
+// Default selector state
+selectorText1.style.color = '#070930';
+selectorUnderline1.style.display = 'unset';
 
 
-// Selecting Slideshow based on slideshow counter
-const counter1 = document.getElementById('counter-1');
-const counter2 = document.getElementById('counter-2');
-const counter3 = document.getElementById('counter-3');
-const counter4 = document.getElementById('counter-4');
-const counter5 = document.getElementById('counter-5');
-const counter6 = document.getElementById('counter-6');
-counter1.style.backgroundColor = 'white';
 
-const displaySlideShowCounter = () => {
-    counter1.style.backgroundColor = 'white';
-    switch (index) {
-        case 0:
-            counter1.style.backgroundColor = 'white';
-            counter2.style.backgroundColor = '';
-            counter3.style.backgroundColor = '';
-            counter4.style.backgroundColor = '';
-            counter5.style.backgroundColor = '';
-            counter6.style.backgroundColor = '';
-            break;
-        case 100:
-            counter1.style.backgroundColor = '';
-            counter2.style.backgroundColor = 'white';
-            counter3.style.backgroundColor = '';
-            counter4.style.backgroundColor = '';
-            counter5.style.backgroundColor = '';
-            counter6.style.backgroundColor = '';
-            break;        
-        case 200:
-            counter1.style.backgroundColor = '';
-            counter2.style.backgroundColor = '';
-            counter3.style.backgroundColor = 'white';
-            counter4.style.backgroundColor = '';
-            counter5.style.backgroundColor = '';
-            counter6.style.backgroundColor = '';
-            break;
-        case 300:
-            counter1.style.backgroundColor = '';
-            counter2.style.backgroundColor = '';
-            counter3.style.backgroundColor = '';
-            counter4.style.backgroundColor = 'white';
-            counter5.style.backgroundColor = '';
-            counter6.style.backgroundColor = '';
-            break;
-        case 400:
-            counter1.style.backgroundColor = '';
-            counter2.style.backgroundColor = '';
-            counter3.style.backgroundColor = '';
-            counter4.style.backgroundColor = '';
-            counter5.style.backgroundColor = 'white';
-            counter6.style.backgroundColor = '';
-            break;
-        case 500:
-            counter1.style.backgroundColor = '';
-            counter2.style.backgroundColor = '';
-            counter3.style.backgroundColor = '';
-            counter4.style.backgroundColor = '';
-            counter5.style.backgroundColor = '';
-            counter6.style.backgroundColor = 'white';
-            break;            
-        default:
-            break;
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Alert tester
+
+const test = () => {
+    alert('test works');
 }
