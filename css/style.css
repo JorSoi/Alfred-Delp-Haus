@@ -623,7 +623,7 @@ nav {
     #zimmerausstattung {
         position: relative;
         cursor: pointer;
-        padding: 10px 0;
+        padding: 15px 0;
     }
 
     #stockwerksausstattung {
@@ -635,6 +635,7 @@ nav {
     #selector-underline-3 {
         position: absolute;
         bottom: 0px;
+        display: none;
     }
 
     #selector-text-1,
@@ -647,14 +648,11 @@ nav {
         transition: color 0.3s ease;
     }
 
-    #selector-text-1 {
-        color: #070930;
-    }
 
     #selector-text-1:hover,
     #selector-text-2:hover,
     #selector-text-3:hover {
-        color: #07093088;
+        color: #0709309f;
     }
 
     #selector-underline-1 {
@@ -669,7 +667,6 @@ nav {
         left: 0;
         right: 0;
         margin: auto;
-        display: none;
     }
 
     #selector-underline-3 {
@@ -677,7 +674,6 @@ nav {
         left: 0;
         right: 0;
         margin: auto;
-        display: none;
     }
 
 
@@ -689,12 +685,206 @@ nav {
         right: 0;
         margin: auto;
         bottom: 0px;
-        width: 150px;
+        width: 130px;
     }
 
     #arrow-indicators img {
-        max-width: 60px;
+        max-width: 55px;
+        opacity: 30%;
     }
+
+
+
+    /* Slideshow section */
+    .slideshow-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .slideshow-wrapper {
+        max-width: 1140px;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        margin-left: 30px;
+        margin-right: 30px;
+        border: 2px solid green;
+    }
+
+    #slideshow-image-container {
+        max-width: 1140px;
+        display: flex;
+        border: 2px solid blue;
+        transition: margin-left 1s ease-in-out;
+    }
+
+    #slideshow-hausausstattung,
+    #slideshow-stockwerksausstattung,
+    #slideshow-zimmerausstattung {
+        display: none;
+    }
+
+    #slideshow-hausausstattung img,
+    #slideshow-stockwerksausstattung img,
+    #slideshow-zimmerausstattung img {
+        width: 100%;
+        max-width: 1140px;
+        height: auto;
+    }
+
+    .button-left,
+    .button-right {
+        position: absolute;
+        border-radius: 5px;
+        height: 45px;
+        width: 45px;
+        background-color: rgba(0, 0, 0, 0.445);
+        border: 2px solid rgb(255, 255, 255);
+        cursor: pointer;
+        outline: none;
+        transition: background-color ease,
+        border ease;
+    }
+
+.button-right {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 40px;
+}
+
+.button-left {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 40px;
+}
+
+.button-left:hover,
+.button-right:hover {
+    background-color: rgba(0, 0, 0, 0.281);
+    border: 2px solid rgba(255, 255, 255, 0.753);
+}
+
+.fa-angle-left,
+.fa-angle-right {
+    color: white;
+}
+
+.nav-counter {
+    width: 120px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#counter-1,
+#counter-2,
+#counter-3,
+#counter-4,
+#counter-5,
+#counter-6 {
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.308);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+
+
+
+
+/* Feature content section */
+.feature-content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 50px;
+}
+
+#feature-content-haus {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1140px;
+}
+
+#feature-content-haus img {
+    width: 110px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.box {
+    max-width: 360px;
+    margin-bottom: 40px;
+}
+
+.box p{
+    font-size: 17px;
+    font-weight: 200;
+    color: #7B88A8;
+    font-weight: 400;
+    margin-top: 6px;
+}
+
+.box h3 {
+    font-size: 21px;
+    color: #070930;
+    font-weight: 900;
+}
+
+
+.pricing-link-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-link-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.pricing-link-content a {
+    text-decoration: none;
+    color: #F14014;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.pricing-link-content img {
+    width: 27px;
+    margin-left: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -717,7 +907,12 @@ nav {
     }
 }
 
-
+/* Feature content section wrap */
+@media (max-width: 1200px) {
+    #feature-content-haus {
+        max-width: 800px;
+    }
+}
 
 /* Shrinking down hero header-content */
 /* Removing heart icon and hastag from content section 1 and 2 */
@@ -771,6 +966,8 @@ nav {
 
 /* Adjusting section 1 for tablet view */
 /* adjusting margin for nav wrapper */
+/* adjusting margin for slideshow wrapper */
+/* adjusting marin for feature content wrapper */
 @media (max-width: 1000px) {
 
     /* section 1 */
@@ -815,6 +1012,18 @@ nav {
 
     /* nav wrapper */
     .nav-wrapper {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    /* slideshow wrapper */
+    .slideshow-wrapper {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    /* feature content wrapper */
+    .feature-content-wrapper {
         margin-left: 2vw;
         margin-right: 2vw;
     }
@@ -927,6 +1136,53 @@ nav {
         margin: unset;
     }
 
+    /* Feature content section wrap */
+    #feature-content-haus {
+        max-width: 360px;
+    }
+
+    #feature-content-haus img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 130px;
+    }
+
+    .box h3,
+    .box p {
+        text-align: center;
+    }
+
+    .pricing-link-content {
+        margin-top: 10px;
+    }
+
+}
+
+
+/* Removing slideshow-buttons and adjusting slideshow counter */
+@media (max-width: 630px) {
+
+    /* .button-left,
+    .button-right {
+        display: none;
+    } */
+
+    .nav-counter {
+        width: 90px;
+        bottom: 5px;
+    }
+
+    #counter-1,
+    #counter-2,
+    #counter-3,
+    #counter-4,
+    #counter-5,
+    #counter-6 {
+        width: 12px;
+        height: 12px;
+        border: 2px solid white;
+    }
 }
 
 
@@ -1039,6 +1295,24 @@ nav {
     .section-image-wrapper-3 {
         min-width: unset;
     }
+
+    /* Adjusting slideshow contents */
+    .slideshow-wrapper {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #counter-1,
+    #counter-2,
+    #counter-3,
+    #counter-4,
+    #counter-5,
+    #counter-6 {
+        width: 10px;
+        height: 10px;
+        border: 1px solid white;
+    }
+
 }
 
 

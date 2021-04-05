@@ -92,3 +92,214 @@ const click6 = () => {
 
 link6.addEventListener('click', click6);
 
+
+
+
+
+
+// Animating slideshow
+const imageContainer = document.getElementById('slideshow-image-container');
+const buttonLeft = document.querySelector('.button-left');
+const buttonRight = document.querySelector('.button-right');
+let index = 0;
+
+const slideRightAnimation = () => {
+    index += 100;
+    clearInterval(automove);
+    automove = setInterval(slideRightAnimation, '20000');
+    if (index > 500) {
+        imageContainer.style.marginLeft = '0';
+        index = 0;
+    } else {
+        imageContainer.style.marginLeft = `-${index}%`;
+    }
+    displaySlideShowCounter();
+    
+}
+
+const slideLeftAnimation = () => {
+    index -= 100;
+    clearInterval(automove);
+    automove = setInterval(slideRightAnimation, '20000');
+    if (index < 0) {
+        imageContainer.style.marginLeft = '-500%';
+        index = 500; 
+    } else {
+        imageContainer.style.marginLeft = `-${index}%`;
+    }
+    displaySlideShowCounter();
+    
+}
+
+buttonRight.addEventListener('click', slideRightAnimation);
+buttonLeft.addEventListener('click', slideLeftAnimation);
+var automove = setInterval(slideRightAnimation, '2000');
+
+
+
+
+// Selecting Slideshow based on slideshow selector
+const hausausstattung = document.getElementById('hausausstattung');
+const selectorText1 = document.getElementById('selector-text-1');
+const selectorUnderline1 = document.getElementById('selector-underline-1');
+const slideShowHausausstattung = document.getElementById('slideshow-hausausstattung');
+
+const stockwerksausstattung = document.getElementById('stockwerksausstattung');
+const selectorText2 = document.getElementById('selector-text-2');
+const selectorUnderline2 = document.getElementById('selector-underline-2');
+const slideShowStockwerksausstattung = document.getElementById('slideshow-stockwerksausstattung');
+
+const zimmerausstattung = document.getElementById('zimmerausstattung');
+const selectorText3 = document.getElementById('selector-text-3');
+const selectorUnderline3 = document.getElementById('selector-underline-3');
+const slideShowZimmerausstattung = document.getElementById('slideshow-zimmerausstattung');
+
+
+// Default selector state
+selectorText1.style.color = '#070930';
+selectorUnderline1.style.display = 'unset';
+slideShowHausausstattung.style.display = 'flex';
+
+const openSlideshow1 = () => {
+    // General setting configs
+    index = 0;
+    displaySlideShowCounter();
+    imageContainer.style.marginLeft = '0';
+    clearInterval(automove);
+    automove = setInterval(slideRightAnimation, '4000');
+
+    
+
+    // Slideshow 1 activated
+    selectorText1.style.color = '#070930';
+    selectorUnderline1.style.display = 'block'
+    slideShowHausausstattung.style.display = 'flex';
+
+    //Other slideshows deactivated
+    selectorText2.style.color = '';
+    selectorUnderline2.style.display = ''
+    slideShowStockwerksausstattung.style.display = '';
+
+    selectorText3.style.color = '';
+    selectorUnderline3.style.display = ''
+    slideShowZimmerausstattung.style.display = '';
+}
+
+const openSlideshow2 = () => {
+    // General setting configs
+    index = 0;
+    displaySlideShowCounter();
+    imageContainer.style.marginLeft = '0';
+    clearInterval(automove);
+    automove = setInterval(slideRightAnimation, '4000');
+    // Slideshow 1 activated
+    selectorText2.style.color = '#070930';
+    selectorUnderline2.style.display = 'block'
+    slideShowStockwerksausstattung.style.display = 'flex';
+
+    //Other slideshows deactivated
+    selectorText1.style.color = '';
+    selectorUnderline1.style.display = ''
+    slideShowHausausstattung.style.display = '';
+
+    selectorText3.style.color = '';
+    selectorUnderline3.style.display = ''
+    slideShowZimmerausstattung.style.display = '';
+}
+
+const openSlideshow3 = () => {
+    // General setting configs
+    index = 0;
+    displaySlideShowCounter();
+    imageContainer.style.marginLeft = '0';
+    clearInterval(automove);
+    automove = setInterval(slideRightAnimation, '4000');
+
+    // Slideshow 1 activated
+    selectorText3.style.color = '#070930';
+    selectorUnderline3.style.display = 'block'
+    slideShowZimmerausstattung.style.display = 'flex';
+
+    //Other slideshows deactivated
+    selectorText1.style.color = '';
+    selectorUnderline1.style.display = ''
+    slideShowHausausstattung.style.display = '';
+
+    selectorText2.style.color = '';
+    selectorUnderline2.style.display = ''
+    slideShowStockwerksausstattung.style.display = '';
+
+}
+
+
+hausausstattung.addEventListener('click', openSlideshow1);
+stockwerksausstattung.addEventListener('click', openSlideshow2);
+zimmerausstattung.addEventListener('click', openSlideshow3);
+
+
+
+
+// Selecting Slideshow based on slideshow counter
+const counter1 = document.getElementById('counter-1');
+const counter2 = document.getElementById('counter-2');
+const counter3 = document.getElementById('counter-3');
+const counter4 = document.getElementById('counter-4');
+const counter5 = document.getElementById('counter-5');
+const counter6 = document.getElementById('counter-6');
+counter1.style.backgroundColor = 'white';
+
+const displaySlideShowCounter = () => {
+    counter1.style.backgroundColor = 'white';
+    switch (index) {
+        case 0:
+            counter1.style.backgroundColor = 'white';
+            counter2.style.backgroundColor = '';
+            counter3.style.backgroundColor = '';
+            counter4.style.backgroundColor = '';
+            counter5.style.backgroundColor = '';
+            counter6.style.backgroundColor = '';
+            break;
+        case 100:
+            counter1.style.backgroundColor = '';
+            counter2.style.backgroundColor = 'white';
+            counter3.style.backgroundColor = '';
+            counter4.style.backgroundColor = '';
+            counter5.style.backgroundColor = '';
+            counter6.style.backgroundColor = '';
+            break;        
+        case 200:
+            counter1.style.backgroundColor = '';
+            counter2.style.backgroundColor = '';
+            counter3.style.backgroundColor = 'white';
+            counter4.style.backgroundColor = '';
+            counter5.style.backgroundColor = '';
+            counter6.style.backgroundColor = '';
+            break;
+        case 300:
+            counter1.style.backgroundColor = '';
+            counter2.style.backgroundColor = '';
+            counter3.style.backgroundColor = '';
+            counter4.style.backgroundColor = 'white';
+            counter5.style.backgroundColor = '';
+            counter6.style.backgroundColor = '';
+            break;
+        case 400:
+            counter1.style.backgroundColor = '';
+            counter2.style.backgroundColor = '';
+            counter3.style.backgroundColor = '';
+            counter4.style.backgroundColor = '';
+            counter5.style.backgroundColor = 'white';
+            counter6.style.backgroundColor = '';
+            break;
+        case 500:
+            counter1.style.backgroundColor = '';
+            counter2.style.backgroundColor = '';
+            counter3.style.backgroundColor = '';
+            counter4.style.backgroundColor = '';
+            counter5.style.backgroundColor = '';
+            counter6.style.backgroundColor = 'white';
+            break;            
+        default:
+            break;
+    }
+}
