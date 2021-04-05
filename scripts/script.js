@@ -362,12 +362,105 @@ selectorUnderline1.style.display = 'unset';
 
 
 
+// Testimonial section
+const testimonialArrowLeft = document.getElementById('testimonial-arrow-left');
+const testimonialArrowLeftMobile = document.getElementById('testimonial-arrow-left-mobile');
+
+const testimonialArrowRight = document.getElementById('testimonial-arrow-right');
+const testimonialArrowRightMobile = document.getElementById('testimonial-arrow-right-mobile');
+
+const profile1 = document.getElementById('profile-1');
+const testimonialText1 = document.getElementById('testimonial-text-1');
+const testimonialNav1 = document.getElementById('testimonial-nav1');
+
+const profile2 = document.getElementById('profile-2');
+const testimonialText2 = document.getElementById('testimonial-text-2');
+const testimonialNav2 = document.getElementById('testimonial-nav2');
+
+const profile3 = document.getElementById('profile-3');
+const testimonialText3 = document.getElementById('testimonial-text-3');
+const testimonialNav3 = document.getElementById('testimonial-nav3');
 
 
 
 
 
+// Default settings
+let profileIndex = 0;
+profile1.style.display = 'block';
+testimonialNav1.style.backgroundColor = '#F1872D';
+testimonialText1.style.display = 'block';
 
+
+const selectProfile = () => {
+    switch (profileIndex) {
+        case 0:
+            profile1.style.display = 'block';
+            testimonialNav1.style.backgroundColor = '#F1872D';
+            testimonialText1.style.display = 'block';
+            profile2.style.display = '';
+            testimonialNav2.style.backgroundColor = '';
+            testimonialText2.style.display = '';
+            profile3.style.display = '';
+            testimonialNav3.style.backgroundColor = '';
+            testimonialText3.style.display = '';
+            break;
+
+        case 1:
+            profile1.style.display = '';
+            testimonialNav1.style.backgroundColor = '';
+            testimonialText1.style.display = '';
+            profile2.style.display = 'block';
+            testimonialNav2.style.backgroundColor = '#F1872D';
+            testimonialText2.style.display = 'block';
+            profile3.style.display = '';
+            testimonialNav3.style.backgroundColor = '';
+            testimonialText3.style.display = '';
+            break;
+
+        case 2:
+            profile1.style.display = '';
+            testimonialNav1.style.backgroundColor = '';
+            testimonialText1.style.display = '';
+            profile2.style.display = '';
+            testimonialNav2.style.backgroundColor = '';
+            testimonialText2.style.display = '';
+            profile3.style.display = 'block';
+            testimonialNav3.style.backgroundColor = '#F1872D';
+            testimonialText3.style.display = 'block';
+            break;
+
+        default:
+            break;
+    }
+}
+
+const goRight = () => {
+    profileIndex + 1;
+    if (profileIndex > 1) {
+        profileIndex = 0;
+    } else {
+        profileIndex += 1;
+    }
+    selectProfile();
+}
+
+const goLeft = () => {
+    profileIndex - 1;
+    if (profileIndex < 1) {
+        profileIndex = 2;
+    } else {
+        profileIndex -= 1;
+    }
+    selectProfile();
+}
+
+
+testimonialArrowLeft.addEventListener('click', goLeft);
+testimonialArrowLeftMobile.addEventListener('click', goLeft);
+
+testimonialArrowRight.addEventListener('click', goRight);
+testimonialArrowRightMobile.addEventListener('click', goRight);
 
 
 
