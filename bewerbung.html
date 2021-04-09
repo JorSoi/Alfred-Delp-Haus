@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Data -->
-    <title>ADH Mannheim | Startseite</title>
+    <title>ADH Mannheim | Bewerbung</title>
     <meta name="keywords" content="Wohnheim, Mannheim, Studium, Wohnen, ADH">
     <meta name="description" content="Das ADH gehört zu den aktivsten Studentenwohnheimen aus Mannheim. Hier wohnen rund 138 Bachelor- und Masterstudentinnen und Studenten zusammen">
     <meta name="author" content="Jorim Soika">
@@ -36,14 +36,14 @@
  <nav>
     <div class="nav-wrapper flex-sb">
 
-        <div class="nav-wrapper__logos">
-            <img id="adh-logo" onclick="location.href='#'" src="assets/adh-logo.svg" alt="ADH Mannheim">
+        <div class="nav-wrapper__logos flex-c">
+            <img id="adh-logo" onclick="location.href='index.html'" src="assets/adh-logo.svg" alt="ADH Mannheim">
             <img id="gkg-logo" src="assets/gkg-logo.svg" alt="Gesamtkirchengemeinde Mannheim">
         </div>
 
         <div class="nav-wrapper__contents">
-            <div id="nav-links">
-                <ul>
+            <div class="nav-links">
+                <ul class="flex-sb">
                     <li><a href="/index.html">Start</a></li>
                     <li><a href="/wohnen.html">Wohnen</a></li>
                     <li><a href="/adh-leben.html">ADH-Leben</a></li>
@@ -52,9 +52,9 @@
                 </ul>
             </div>
 
-            <button class="nav-cta" onclick="location.href='bewerbung.html'">Zur Bewerbung</button>
+            <button class="nav-cta cta" onclick="location.href='bewerbung.html'">Zur Bewerbung</button>
 
-            <div id="nav-hamburger">
+            <div id="hamburger-icon">
                 <div class="line-1"></div>
                 <div class="line-2"></div>
                 <div class="line-3"></div>
@@ -64,50 +64,76 @@
     </div>
 </nav>
 
-<div id="nav__indirect-spacer"></div>
+<div class="nav__indirect-spacer"></div>
 
 <!-- Mobile menu overlay -->
 <section id="mobile-opened">
     <div id="menu-closer">
-        <img src="assets/menu-closer.svg">
+        <img src="assets/menu-closer.svg" alt="">
     </div>
     <div class="menu-content-wrapper">
-        <div class="menu-text-wrapper">
-            <div class="menu-text text-1">
-                <img class="menu-text-drop-1" src="assets/mobile-nav-drop-left.svg" alt="">
-                <a class="link-1" href="index.html">Start</a>
-                <img class="menu-text-drop-1" src="assets/mobile-nav-drop-right.svg" alt="">
-            </div>
+        <div class="menu-text text-1">
+            <img class="menu-text-drop-1" src="assets/mobile-nav-drop-left.svg" alt="">
+            <a class="link-1" href="index.html">Start</a>
+            <img class="menu-text-drop-1" src="assets/mobile-nav-drop-right.svg" alt="">
+        </div>
 
-            <div class="menu-text text-2">
-                <img class="menu-text-drop-2" src="assets/mobile-nav-drop-left.svg" alt="">
-                <a class="link-2" href="index.html">Wohnen</a>
-                <img class="menu-text-drop-2" src="assets/mobile-nav-drop-right.svg" alt="">
-            </div>
+        <div class="menu-text text-2">
+            <img class="menu-text-drop-2" src="assets/mobile-nav-drop-left.svg" alt="">
+            <a class="link-2" href="index.html">Wohnen</a>
+            <img class="menu-text-drop-2" src="assets/mobile-nav-drop-right.svg" alt="">
+        </div>
 
-            <div class="menu-text text-3">
-                <img class="menu-text-drop-3" src="assets/mobile-nav-drop-left.svg" alt="">
-                <a class="link-3" href="index.html">ADH-Leben</a>
-                <img class="menu-text-drop-3" src="assets/mobile-nav-drop-right.svg" alt="">
-            </div>
+        <div class="menu-text text-3">
+            <img class="menu-text-drop-3" src="assets/mobile-nav-drop-left.svg" alt="">
+            <a class="link-3" href="index.html">ADH-Leben</a>
+            <img class="menu-text-drop-3" src="assets/mobile-nav-drop-right.svg" alt="">
+        </div>
 
-            <div class="menu-text text-4">
-                <img class="menu-text-drop-4" src="assets/mobile-nav-drop-left.svg" alt="">
-                <a class="link-4" href="index.html">Lokales</a>
-                <img class="menu-text-drop-4" src="assets/mobile-nav-drop-right.svg" alt="">
-            </div>
+        <div class="menu-text text-4">
+            <img class="menu-text-drop-4" src="assets/mobile-nav-drop-left.svg" alt="">
+            <a class="link-4" href="index.html">Lokales</a>
+            <img class="menu-text-drop-4" src="assets/mobile-nav-drop-right.svg" alt="">
+        </div>
 
-            <div class="menu-text text-5">
-                <img class="menu-text-drop-5" src="assets/mobile-nav-drop-left.svg" alt="">
-                <a class="link-5" href="index.html">Kontakt</a>
-                <img class="menu-text-drop-5" src="assets/mobile-nav-drop-right.svg" alt="">
-            </div>
+        <div class="menu-text text-5">
+            <img class="menu-text-drop-5" src="assets/mobile-nav-drop-left.svg" alt="">
+            <a class="link-5" href="index.html">Kontakt</a>
+            <img class="menu-text-drop-5" src="assets/mobile-nav-drop-right.svg" alt="">
+        </div>
 
-            <div class="menu-text text-6">
-                <img class="menu-text-drop-6" src="assets/mobile-nav-drop-left.svg" alt="">
-                <a class="link-6" href="bewerbung.html">Zur Bewerbung</a>
-                <img class="menu-text-drop-6" src="assets/mobile-nav-drop-right.svg" alt="">
-            </div>
+        <div class="menu-text text-6">
+            <img class="menu-text-drop-6" src="assets/mobile-nav-drop-left.svg" alt="">
+            <a class="link-6" href="bewerbung.html">Zur Bewerbung</a>
+            <img class="menu-text-drop-6" src="assets/mobile-nav-drop-right.svg" alt="">
+        </div>
+    </div>
+</section>
+
+<!-- hero section -->
+<header class="header">
+    <div class="header__headline-wrapper flex-c">
+        <div class="header__headline">
+            <h1>Deine Bewerbung</h1>
+            <img class="brush-bewerbung" src="assets/main-brush.svg" alt="">
+        </div>
+    </div>
+
+    <div class="header__image-wrapper flex-c">
+        <img class="header__image--bewerbung" src="assets/header-img-bewerbung.png" alt="">
+        <div class="header__decoration"></div>
+    </div>
+</header>
+
+<!-- Intro section -->
+<section class="intro flex-c">
+    <div class="intro-wrapper">
+        <div class="intro-header">
+            <h2>So funktioniert's</h2>
+            <img class="brush-intro bewerbung" src="assets/main-brush.svg" alt="">
+        </div>
+        <div class="intro-subheader">
+            <p>Wir freuen uns sehr, dass du dich für unser Studentenwohnheim bewerben möchtest. Die Bewerbung ist schnell und simpel. Folge einfach den unten stehenden Anweisungen, die dich Schritt für Schritt durch unser Bewerbungsverfahren führen.</p>
         </div>
     </div>
 </section>
