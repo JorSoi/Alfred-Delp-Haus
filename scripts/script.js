@@ -17,7 +17,7 @@ const closing = () => {
     mobileOpened.style.display = 'none';
 }
 
-hamburgerIcon.addEventListener('click', opening)
+hamburgerIcon.addEventListener('click', opening);
 menuCloser.addEventListener('click', closing);
 
 
@@ -199,16 +199,16 @@ const openSlideshow1 = () => {
     // Slideshow 1 activated
     triggerSlideshow1();
     selectorText1.style.color = '#070930';
-    selectorUnderline1.style.display = 'block'
+    selectorUnderline1.style.display = 'block';
     slideshow1.style.display = 'flex';
 
     //Other slideshows deactivated
     selectorText2.style.color = '';
-    selectorUnderline2.style.display = ''
+    selectorUnderline2.style.display = '';
     slideshow2.style.display = '';
 
     selectorText3.style.color = '';
-    selectorUnderline3.style.display = ''
+    selectorUnderline3.style.display = '';
     slideshow3.style.display = '';
 }
 
@@ -219,16 +219,16 @@ const openSlideshow2 = () => {
     // Slideshow 2 activated
     triggerSlideshow2();
     selectorText2.style.color = '#070930';
-    selectorUnderline2.style.display = 'block'
+    selectorUnderline2.style.display = 'block';
     slideshow2.style.display = 'flex';
 
     //Other slideshows deactivated
     selectorText1.style.color = '';
-    selectorUnderline1.style.display = ''
+    selectorUnderline1.style.display = '';
     slideshow1.style.display = '';
 
     selectorText3.style.color = '';
-    selectorUnderline3.style.display = ''
+    selectorUnderline3.style.display = '';
     slideshow3.style.display = '';
 }
 
@@ -237,16 +237,16 @@ const openSlideshow3 = () => {
     // Slideshow 1 activated
     triggerSlideshow3();
     selectorText3.style.color = '#070930';
-    selectorUnderline3.style.display = 'block'
+    selectorUnderline3.style.display = 'block';
     slideshow3.style.display = 'flex';
 
     //Other slideshows deactivated
     selectorText1.style.color = '';
-    selectorUnderline1.style.display = ''
+    selectorUnderline1.style.display = '';
     slideshow1.style.display = '';
 
     selectorText2.style.color = '';
-    selectorUnderline2.style.display = ''
+    selectorUnderline2.style.display = '';
     slideshow2.style.display = '';
 }
 
@@ -396,3 +396,144 @@ testimonialArrowLeftMobile.addEventListener('click', goLeft);
 
 testimonialArrowRight.addEventListener('click', goRight);
 testimonialArrowRightMobile.addEventListener('click', goRight);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// page: bewerbung q&a accordeon
+const text1 = document.getElementById('text-q1');
+const text2 = document.getElementById('text-q2');
+const text3 = document.getElementById('text-q3');
+const text4 = document.getElementById('text-q4');
+const text5 = document.getElementById('text-q5');
+
+const question1 = document.querySelector('.question-1');
+const question2 = document.querySelector('.question-2');
+const question3 = document.querySelector('.question-3');
+const question4 = document.querySelector('.question-4');
+const question5 = document.querySelector('.question-5');
+
+const arrowIcon1 = document.querySelector('.icon-1');
+const arrowIcon2 = document.querySelector('.icon-2');
+const arrowIcon3 = document.querySelector('.icon-3');
+const arrowIcon4 = document.querySelector('.icon-4');
+const arrowIcon5 = document.querySelector('.icon-5');
+
+
+//Event Handlers for each Text field
+const toggleText1 = () => {
+    if(text1.style.display === 'none') {
+    text1.style.display = 'block';
+    arrowIcon1.style.transform = 'rotate(180deg)';
+    text1.style.marginTop = '0';
+    text2.style.display = 'none';
+    text3.style.display = 'none';
+    text4.style.display = 'none';
+    text5.style.display = 'none';
+    arrowIcon2.style.transform = '';
+    arrowIcon3.style.transform = '';
+    } else {
+        text1.style.display = 'none';
+        arrowIcon1.style.transform = '';
+    }
+};
+
+const toggleText2 = () => {
+    if(text2.style.display === 'none') {
+    text2.style.cssText = 'display: block; margin-top: 0';
+    arrowIcon2.style.transform = 'rotate(180deg)';
+    text1.style.display = 'none';
+    text3.style.display = 'none';
+    arrowIcon1.style.transform = '';
+    arrowIcon3.style.transform = '';
+    } else {
+        text2.style.display = 'none';
+        arrowIcon2.style.transform = '';
+    }
+};
+
+const toggleText3 = () => {
+    if(text3.style.display === 'none') {
+    text3.style.display = 'block';
+    arrowIcon3.style.transform = 'rotate(180deg)';
+    text3.style.marginTop = '0';
+    text1.style.display = 'none';
+    text2.style.display = 'none';
+    arrowIcon1.style.transform = '';
+    arrowIcon2.style.transform = '';
+    } else {
+        text3.style.display = 'none';
+        arrowIcon3.style.transform = '';
+    }
+};
+
+const toggleText4 = () => {
+    if(text4.style.display === 'none') {
+    text4.style.display = 'block';
+    arrowIcon4.style.transform = 'rotate(180deg)';
+    text3.style.marginTop = '0';
+    text1.style.display = 'none';
+    text2.style.display = 'none';
+    arrowIcon1.style.transform = '';
+    arrowIcon2.style.transform = '';
+    } else {
+        text3.style.display = 'none';
+        arrowIcon3.style.transform = '';
+    }
+};
+
+const toggleText5 = () => {
+    if(text3.style.display === 'none') {
+    text3.style.display = 'block';
+    arrowIcon3.style.transform = 'rotate(180deg)';
+    text3.style.marginTop = '0';
+    text1.style.display = 'none';
+    text2.style.display = 'none';
+    arrowIcon1.style.transform = '';
+    arrowIcon2.style.transform = '';
+    } else {
+        text3.style.display = 'none';
+        arrowIcon3.style.transform = '';
+    }
+};
+
+
+
+
+
+
+question1.addEventListener('click', test);
+question2.addEventListener('click', toggleText2);
+question3.addEventListener('click', toggleText3);
+question4.addEventListener('click', toggleText4);
+question5.addEventListener('click', toggleText5);
+
+const test = () => {
+    alert('it works');
+}
