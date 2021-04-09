@@ -1,4 +1,4 @@
-/* General Style-Settings */
+/* General global style configurations */
 
 * {
     margin: 0px;
@@ -7,8 +7,7 @@
     font-size: 16px;
     font-family: "DM Sans", "sans-serif";
     color: #7B88A8;
-    border: 1px solid green;
-
+    /* border: 1px solid green; */
 }
 
 body {
@@ -40,27 +39,20 @@ nav {
     z-index: 0;
 }
 
-#nav-indirect-spacer {
-    height: 75px;
-    width: 100%;
-    z-index: -1;
-}
-
 .nav-logos {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#adh-logo,
 #gkg-logo {
     height: 45px;
     width: auto;
-    margin-left: 20px;
 }
 
-#adh-logo {
-    height: 45px;
-    width: auto;
+#gkg-logo {
+    margin-left: 20px;
 }
 
 .nav-contents {
@@ -200,6 +192,13 @@ nav {
 .menu-text-drop-6 {
     display: none;
 }
+
+#nav-indirect-spacer {
+    height: 75px;
+    width: 100%;
+    z-index: -1;
+}
+
 
 
 
@@ -1573,7 +1572,7 @@ nav {
         margin-left: 2vw;
         margin-right: 2vw;
     }
-
+}
 
 
 /* Repositioning footer for tablet view */
@@ -1741,7 +1740,6 @@ nav {
         max-width: 450px;
         cursor: pointer;
         margin-bottom: 70px;
-        border: 1px solid purple;
     }
 
     /* Application banner adjustment */
@@ -1752,7 +1750,6 @@ nav {
 
     .application-cta-flex {
         width: 100%;
-        border: 1px solid black;
         display: flex;
         justify-content: center;
     }
@@ -1794,11 +1791,6 @@ nav {
 
 /* Removing slideshow-buttons and adjusting slideshow counter */
 @media (max-width: 630px) {
-
-    /* .button-left,
-    .button-right {
-        display: none;
-    } */
 
     .nav-counter {
         width: 90px;
@@ -2053,4 +2045,4 @@ nav {
     #testimonial-arrow-right-mobile {
         width: 60px;
     }
-}}
+}
