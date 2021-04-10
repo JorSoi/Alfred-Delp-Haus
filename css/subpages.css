@@ -27,6 +27,12 @@ h2 {
     color: #070930;
 }
 
+h3 {
+    font-size: 45px;
+    line-height: 3rem;
+    color: #070930;
+}
+
 h5 {
     font-size: 20px;
     font-weight: 500;
@@ -47,6 +53,11 @@ h5 {
 
 
 /* Flexbox helper */
+.flex-ai {
+    display: flex;
+    align-items: center;
+}
+
 .flex-c {
     display: flex;
     justify-content: center;
@@ -473,8 +484,8 @@ nav {
 
 
 /*Page 3: Q&A section */
-.q-and-a-section {
-background-color: #F8EADA;
+#q-and-a-section {
+background-color: #FFF0E2;
 padding-bottom: 150px;
 }
 
@@ -728,10 +739,356 @@ padding-bottom: 150px;
 
 
 
-/* Page 3 customizations */
+/* footer bebwerbung customizations */
 .footer-content-area.footer-bewerbung {
     padding-top: 80px;
 }
+
+
+/*  footer wohnen customizations*/
+.application-wrapper.wohnen {
+    background-color: #FFF0E2;
+}
+
+
+
+
+
+
+/* page: wohnen inventory section */
+.room-inventory {
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.inventory-wrapper {
+    min-width: 1000px;
+    align-items: unset;
+    margin-left: 30px;
+    flex-wrap: nowrap;
+}
+
+.room-inventory::-webkit-scrollbar {
+    display: none;
+}
+
+.inventory-wrapper p{
+    font-size: 19px;
+    font-weight: 400;
+    margin-left: 3px;
+}
+
+.inventory-wrapper img{
+    width: 40px;
+}
+
+.inventory-wrapper .flex-ai:nth-child(n+2) {
+    margin-top: 5px;
+}
+
+.arrow-indicators {
+    display: none;
+    justify-content: space-between;
+    width: 70px;
+}
+
+.arrow-indicators img {
+    max-width: 80px;
+    opacity: 30%;
+}
+
+
+
+/* Explainer left section */
+.explainer-left,
+.explainer-right {
+    width: 100%;
+    background-color: white;
+    position: relative;
+    min-height: 650px;
+}
+
+.explainer-left__wrapper,
+.explainer-right__wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 1140px;
+    margin: 0 30px;
+}
+
+.explainer-left__image-wrapper,
+.explainer-right__image-wrapper {
+    max-width: 550px;
+    min-width: 400px;
+    margin-right: 5%;
+}
+
+.explainer-left__image-wrapper img,
+.explainer-right__image-wrapper img {
+    width: 100%;
+}
+
+.explainer-left__text-wrapper,
+.explainer-right__text-wrapper {
+    max-width: 600px;
+}
+
+.explainer-left__text-wrapper h6,
+.explainer-right__text-wrapper h6 {
+    margin-bottom: 6px;
+    letter-spacing: 0.1rem;
+}
+
+.explainer-left__text-wrapper.wohnen-1 h6,
+.explainer-right__text-wrapper.wohnen-4 h6 {
+    color:#F1872D;
+}
+
+.explainer-right__text-wrapper.wohnen-2 h6 {
+    color:#F4431A;
+}
+
+.explainer-left__text-wrapper.wohnen-3 h6 {
+    color: #537D42;
+}
+
+.explainer-left__text-wrapper h2,
+.explainer-right__text-wrapper h2 {
+    max-width: 450px;
+    position: relative;
+}
+
+
+.explainer-left__text-wrapper p,
+.explainer-right__text-wrapper p {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+#heart-icon {
+    position: absolute;
+    width: 130px;
+    top: -60px;
+    left: -120px;
+}
+
+.explainer-left__drop {
+    width: 50px;
+    position: absolute;
+    top: -50px;
+    right: -7%;
+}
+
+.explainer-right__drop{
+    width: 50px;
+    position: absolute;
+    top: -80px;
+    left: -50px;
+}
+
+.div-decoration-left {
+    background-color: #000;
+    clip-path: polygon(0 4%, 51% 1%, 96% 2%, 100% 70%, 98% 100%, 44% 98%, 0 100%, 0 51%);
+    position: absolute;
+    left: 0px;
+    z-index: 0;
+    width: 30%;
+    height: 90%;
+}
+
+.div-decoration-right {
+    position: absolute;
+    right: 0px;
+    z-index: 0;
+    width: 30%;
+    height: 90%;
+    background-color: #000;
+    clip-path: polygon(0 4%, 61% 0, 100% 3%, 100% 100%, 42% 96%, 3% 100%, 0 81%, 2% 21%);
+}
+
+.div-decoration-left.wohnen-1,
+.div-decoration-right.wohnen-4 {
+    background-color: #FFF0E2;
+}
+
+.div-decoration-right.wohnen-2 {
+    background-color: #ffe4dd;
+}
+
+.div-decoration-left.wohnen-3 {
+    background-color: #E0E3DB;
+}
+
+
+.explainer-left.wohnen-1,
+.explainer-left.wohnen-3 {
+    margin-top: 120px;
+}
+
+
+
+
+
+
+
+
+
+/* Pricing section */
+.pricing {
+    background-color: #FFF0E2;
+}
+
+.pricing-wrapper {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0px 30px;
+    flex-wrap: wrap;
+}
+
+.table__pricetag {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+.pricetag-shadow {
+    filter: drop-shadow(0px 6px 5px  rgba(0, 0, 0, 0.13));
+    position: relative;
+    z-index: 1;
+}
+
+.pricetag-card {
+    clip-path: polygon(4% 3%, 24% 1%, 49% 2%, 66% 1%, 98% 2%, 99% 27%, 100% 70%, 96% 94%, 71% 95%, 47% 94%, 26% 93%, 14% 95%, 2% 93%, 0% 74%, 0% 46%, 2% 24%, 2% 11%);
+    background-color: #fff;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+.pricetag-card h5 {
+    font-family: "Ink Free";
+    color: #F4431A;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.pricing span {
+    font-family: "Ink Free";
+    color: #F4431A;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.pricetag-card h6 {
+    margin-top: 5px;
+}
+
+
+.pricetag-card h6,
+.pricetag-card p {
+    text-align: center;
+}
+
+.pricetag-background {
+    position: absolute; 
+    bottom: 0px;
+    width: 100%;
+    height: 40%;
+    background-color: #fff;
+    border-radius: 10px 10px 0px 0px;
+    z-index: 0;
+}
+
+.table__list {
+    background-color: #fff;
+    width: 250px;
+    border-radius: 0px 0px 10px 10px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.table__list img {
+    width: 35px;
+}
+
+.table__list .flex-ai:nth-child(n+2) {
+    margin-top: 5px;
+}
+
+.table__list p {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+
+
+/* Wohnen: Zusatzinformation section */
+.intro.zusatz,
+.zusatz {
+    background-color:#FFF0E2;
+}
+
+.intro-wrapper.zusatz {
+    margin-top: 200px;
+}
+
+.zusatz-wrapper {
+    margin-left: 30px;
+    margin-right: 30px;
+    flex-wrap: wrap;
+    max-width: 940px;
+    width: 100%;
+    align-items: unset;
+}
+
+
+.zusatz-wrapper img {
+    width: 130px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.box-zusatz {
+    max-width: 360px;
+    margin-bottom: 40px;
+}
+
+.box-zusatz p{
+    font-size: 18px;
+    font-weight: 200;
+    color: #7B88A8;
+    font-weight: 400;
+}
+
+.box-zusatz h3 {
+    font-size: 24px;
+    color: #070930;
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -766,9 +1123,42 @@ padding-bottom: 150px;
     .paper-plane {
         display: none;
     }
+
+    /* section 1 heart icon; section 2 hastag */
+    #heart-icon {
+        display: none;
+    }
 }
 
 
+
+
+
+/* Relocating section 2 drop */
+@media (max-width: 1250px) {
+
+    /* section 2 drop */
+    .explainer-right__drop {
+        transform: scale(-1, 1);
+        top: -40px;
+        left: unset;
+        right: -20px;
+    }
+}
+
+/* Wrapping pricing table */
+@media (max-width: 1150px) {
+
+    .pricing-wrapper {
+        max-width: 600px;
+        margin: 0 2vw;
+    }
+
+    .table.margin-top {
+        margin-top: 50px;
+    }
+
+}
 
 
 /* Removing GKG-Logo */
@@ -787,6 +1177,24 @@ padding-bottom: 150px;
     }
 }
 
+@media (max-width: 1050px) {
+
+    .room-inventory {
+        display: block;
+        padding-bottom: 15px;
+    }
+
+    .inventory-wrapper {
+        overflow-x: scroll;
+        width: 100%;
+        margin-left: 30px;
+        padding-right: 30px;
+    }
+
+    .arrow-indicators {
+        display: flex;
+    }
+}
 
 
 
@@ -798,6 +1206,48 @@ padding-bottom: 150px;
         margin-left: 2vw;
         margin-right: 2vw;
     }
+
+    /* explainer left wohnen */
+    .explainer-left__wrapper,
+    .explainer-right__wrapper {
+        display: block;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        margin-bottom: 150px;
+    }
+
+    .explainer-left__image-wrapper,
+    .explainer-right__image-wrapper {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .explainer-left__text-wrapper,
+    .explainer-right__text-wrapper {
+        max-width: 90%;
+    }
+
+    .explainer-left__text-wrapper {
+        margin-top: 30px;
+    }
+
+    .explainer-right__text-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .explainer-right__text-wrapper {
+        margin-bottom: 30px;
+        max-width: 90%;
+    }
+
+    .div-decoration-left,
+    .div-decoration-right {
+        width: 50%;
+        height: 60%;
+    }
+
+
+
 
     /* Anleitung margin & padding*/
     .anleitung-wrapper-1,
@@ -846,7 +1296,7 @@ padding-bottom: 150px;
     }
 
     /* page: bewerbung q&a */
-    .q-and-a-section {
+    #q-and-a-section {
         padding-bottom: 75px;
     }
 
@@ -901,6 +1351,26 @@ padding-bottom: 150px;
 }
 
 
+/* wohnen zusatz section adjustment */
+@media (max-width: 830px) {
+
+    .zusatz-wrapper {
+        max-width: 360px;
+        margin: 0 2vw;
+    }
+
+    .zusatz-wrapper img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 130px;
+    }
+
+    .box-zusatz h3,
+    .box-zusatz p {
+        text-align: center;
+    }
+}
 
 
 
@@ -918,10 +1388,40 @@ padding-bottom: 150px;
         display: block;
     }
 
-    /* Reducing bottom margin at introduction wrapper 1 & 2 */
-    .introduction-wrapper {
+    /* Explainer adjustment */
+    .explainer-left.wohnen-1,
+    .explainer-left.wohnen-3 {
+        margin-top: 75px;
+    }
+
+    .div-decoration-left,
+    .div-decoration-right{
+        width: 90%;
+        height: 60%;
+    }
+
+    .explainer-left__text-wrapper,
+    .explainer-right__text-wrapper {
+        max-width: 100%;
+    }
+
+    /* explainer left wohnen */
+    .explainer-left__wrapper,
+    .explainer-right__wrapper {
         margin-bottom: 75px;
     }
+
+
+
+    
+
+    /* Reducing margin at introduction wrapper 1 & 2 */
+    .intro-wrapper {
+        margin-bottom: 70px;
+        margin-top: 70px;
+    }
+
+
 
     /* page: bewerbung update */
     .anleitung-update-section {
@@ -971,7 +1471,46 @@ padding-bottom: 150px;
     .footer-wrapper h5 {
         margin-bottom: 15px;
     }
+
+    /* reducing margin wohnung intro zusatz */
+    .intro-wrapper.zusatz {
+        margin-top: 100px;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Wrapping pricing table */
+@media (max-width: 570px) {
+
+    .pricing-wrapper {
+        max-width: 300px;
+        margin: 0 2vw;
+    }
+
+    .table:nth-child(n+2) {
+        margin-top: 50px;
+    }
+
+    .table__list {
+        width: 300px;
+    }
+
+    .table__list .flex-ai {
+        margin-left: 40px
+    }
+
+}
+
+
 
 
 
@@ -981,6 +1520,12 @@ padding-bottom: 150px;
 
     .header__headline h1 {
         font-size: 50px;
+    }
+
+    /* Section content drop */
+    .span-left,
+    .span-right {
+        display: none;
     }
 
     /* footer credentials adjustment */
@@ -995,6 +1540,11 @@ padding-bottom: 150px;
     .credentials-wrapper p {
         text-align: center;
         margin-bottom: 10px;;
+    }
+
+    /* Introduction-header wohnen stockwerk  */
+    .intro-header.stockwerk h2 {
+        font-size: 32px;
     }
 }
 
@@ -1053,9 +1603,34 @@ padding-bottom: 150px;
         margin-bottom: 15vw;
     }
 
+    /* explainer section */
+    .div-decoration-left {
+        height: 50%;
+    }
+
+    .explainer-left.wohnen-1,
+    .explainer-left.wohnen-3 {
+        margin-top: 40px;
+    }
+    
+
+    .explainer-left__image-wrapper,
+    .explainer-right__image-wrapper {
+        min-width: unset;
+    }
+
     /* Introduction-header */
     .intro-header h1 {
         line-height: 3rem;
+    }
+
+    .intro-header.wohnen h2 {
+        font-size: 32px;
+    }
+
+    .intro-wrapper {
+        margin-bottom: 40px;
+        margin-top: 40px;
     }
 
     .brush-intro {
@@ -1097,4 +1672,27 @@ padding-bottom: 150px;
         margin-bottom: 50px;
         margin-left: 0px;
     }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 350px) {
+
+    /* Adjusting explainer left header size */
+    .explainer-left__text-wrapper h2,
+    .explainer-right__text-wrapper h2 {
+        font-size: 40px;
+        line-height: 2.7rem;
+    }
+
+        /* Introduction-header wohnen stockwerk  */
+        .intro-header.stockwerk h2 {
+            font-size: 29px;
+            letter-spacing: -1px;
+        }
 }

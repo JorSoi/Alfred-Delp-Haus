@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head> 
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Data -->
+    <title>ADH Mannheim | Wohnen</title>
+    <meta name="keywords" content="Wohnheim, Mannheim, Studium, Wohnen, ADH">
+    <meta name="description" content="Das ADH gehört zu den aktivsten Studentenwohnheimen aus Mannheim. Hier wohnen rund 138 Bachelor- und Masterstudentinnen und Studenten zusammen">
+    <meta name="author" content="Jorim Soika">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+
+    <!-- CDN Resources -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="http://fonts.cdnfonts.com/css/ink-free" rel="stylesheet">
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="css/subpages.css" type="text/css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/script.js" async></script>
+</head>
+
+
+
+
+
+
+<body>
+
+ <!-- Navigation Bar -->
+ <nav>
+    <div class="nav-wrapper flex-sb">
+
+        <div class="nav-wrapper__logos flex-c">
+            <img id="adh-logo" onclick="location.href='index.html'" src="assets/adh-logo.svg" alt="ADH Mannheim">
+            <img id="gkg-logo" src="assets/gkg-logo.svg" alt="Gesamtkirchengemeinde Mannheim">
+        </div>
+
+        <div class="nav-wrapper__contents">
+            <div class="nav-links">
+                <ul class="flex-sb">
+                    <li><a href="/index.html">Start</a></li>
+                    <li><a href="/wohnen.html">Wohnen</a></li>
+                    <li><a href="/adh-leben.html">ADH-Leben</a></li>
+                    <li><a href="/lokales.html">Lokales</a></li>
+                    <li><a href="/kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <button class="nav-cta cta" onclick="location.href='bewerbung.html'">Zur Bewerbung</button>
+
+            <div id="hamburger-icon">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<div class="nav__indirect-spacer"></div>
+
+
+
+
+
+
+<!-- Mobile menu overlay -->
+<section id="mobile-opened">
+    <div id="menu-closer">
+        <img src="assets/menu-closer.svg" alt="">
+    </div>
+    <div class="menu-content-wrapper">
+        <div class="menu-text text-1">
+            <img class="menu-text-drop-1" src="assets/mobile-nav-drop-left.svg" alt="">
+            <a class="link-1" href="index.html">Start</a>
+            <img class="menu-text-drop-1" src="assets/mobile-nav-drop-right.svg" alt="">
+        </div>
+
+        <div class="menu-text text-2">
+            <img class="menu-text-drop-2" src="assets/mobile-nav-drop-left.svg" alt="">
+            <a class="link-2" href="index.html">Wohnen</a>
+            <img class="menu-text-drop-2" src="assets/mobile-nav-drop-right.svg" alt="">
+        </div>
+
+        <div class="menu-text text-3">
+            <img class="menu-text-drop-3" src="assets/mobile-nav-drop-left.svg" alt="">
+            <a class="link-3" href="index.html">ADH-Leben</a>
+            <img class="menu-text-drop-3" src="assets/mobile-nav-drop-right.svg" alt="">
+        </div>
+
+        <div class="menu-text text-4">
+            <img class="menu-text-drop-4" src="assets/mobile-nav-drop-left.svg" alt="">
+            <a class="link-4" href="index.html">Lokales</a>
+            <img class="menu-text-drop-4" src="assets/mobile-nav-drop-right.svg" alt="">
+        </div>
+
+        <div class="menu-text text-5">
+            <img class="menu-text-drop-5" src="assets/mobile-nav-drop-left.svg" alt="">
+            <a class="link-5" href="index.html">Kontakt</a>
+            <img class="menu-text-drop-5" src="assets/mobile-nav-drop-right.svg" alt="">
+        </div>
+
+        <div class="menu-text text-6">
+            <img class="menu-text-drop-6" src="assets/mobile-nav-drop-left.svg" alt="">
+            <a class="link-6" href="bewerbung.html">Zur Bewerbung</a>
+            <img class="menu-text-drop-6" src="assets/mobile-nav-drop-right.svg" alt="">
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- hero section -->
+<header class="header">
+    <div class="header__headline-wrapper flex-c">
+        <div class="header__headline">
+            <h1>Wohnen & Preise</h1>
+            <img class="brush-bewerbung" src="assets/main-brush.svg" alt="">
+        </div>
+    </div>
+
+    <div class="header__image-wrapper flex-c">
+        <img class="header__image--bewerbung" src="assets/header-img-wohnen.webp" alt="">
+        <div class="header__decoration"></div>
+    </div>
+</header>
+
+
+
+
+
+
+<!-- Intro section Zimmerausstattung-->
+<section class="intro flex-c">
+    <div class="intro-wrapper">
+        <div class="intro-header wohnen">
+            <h2>Zimmerausstattung</h2>
+            <img class="brush-intro bewerbung" src="assets/main-brush.svg" alt="">
+        </div>
+        <div class="intro-subheader">
+            <p>Jedes Zimmer ist vollständig möbliert und kommt unter Anderem mit folgenden Möbeln bzw. Utensilien:</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Room inventory section -->
+<section class="room-inventory flex-c">
+    <div class="inventory-wrapper flex-sb">
+        <div class="box-1">
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>1 großer Tisch</p>
+            </div>
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>1 großes Regal</p>
+            </div>
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>2 kleine Regale</p>
+            </div>
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>1 Heizregler</p>
+            </div>
+        </div>
+
+        <div class="box-2">
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>1 Schreibtischstuhl</p>
+            </div>
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>1 Waschbecken</p>
+            </div>
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>1 Wandspiegel</p>
+            </div>
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>2 Zimmerleuchten</p>
+            </div>
+        </div>
+
+        <div class="box-3">
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>1 Kleiderschrank</p>
+            </div>
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>1 Bett (100 x 200)</p>
+            </div>
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>Stauraum unter Bett</p>
+            </div>
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>1 Rauchmelder</p>
+            </div>
+        </div>
+
+        <div class="box-4">
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>1 Internetanschluss</p>
+            </div>
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>1 Telefonanschluss</p>
+            </div>
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>1 Fernsehanschluss</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sidescroll-arrows flex-c">
+    <div class="arrow-indicators">
+        <img src="assets/section-arrow-left.svg" alt="">
+        <img src="assets/section-arrow-right.svg" alt="">
+    </div>
+</section>
+
+
+
+<!-- Explainer section 1 -->
+<section class="explainer-left wohnen-1 flex-c">
+    <div class="explainer-left__wrapper flex-sb" data-aos="fade-up" data-aos-duration="1000">
+        <div class="explainer-left__image-wrapper">
+            <img loading ="lazy" src="assets/explainer-stauraum.webp" alt="ADH Zimmerausstattung">
+        </div>
+        <div class="explainer-left__text-wrapper wohnen-1">
+            <h6>Studentenzimmer</h6>
+            <h2>
+                Mehr als man denkt
+                <span class="span-left">
+                    <img class="explainer-left__drop" src="assets/section-1-drop.svg" alt="">
+                </span>
+            </h2>
+            <p>Unsere Zimmer haben mehr in sich als man vermutet. Mit einem großen Stauraum unter deinem Bett als auch mit einer Ablage, die sich über dein gesamtes Zimmer zieht kannst du alles verstauen, was du für dein Studium und dein Leben in Mannheim benötigst. </p>
+        </div>
+        <img id="heart-icon" src="assets/heart-icon.svg" alt="" data-aos="zoom-in" data-aos-delay="500">
+    </div>
+    <div class="div-decoration-left wohnen-1"></div>
+</section>
+
+
+
+<!-- Explainer section 2 -->
+<section class="explainer-right wohnen-2 flex-c">
+    <div class="explainer-right__wrapper flex-sb" data-aos="fade-up" data-aos-duration="1000">
+        <div class="explainer-right__text-wrapper wohnen-2">
+            <h6>Studentenzimmer</h6>
+            <h2>
+                Viel Arbeitsfläche für dich
+                <span class="span-right">
+                    <img class="explainer-right__drop" src="assets/explainer-right-drop-wohnen-2.svg" alt="">
+                </span>
+            </h2>
+            <p>Dein Schreibtisch erstreckt sich von der einen Zimmerseite zur Anderen, wodurch du viel Platz für deinen Computer, Laptop und Schreibmaterialien hast. In den Regalbrettern an der Wand kannst du deine Lernmaterialien ebenfalls verstauen.</p>
+        </div>
+        <div class="explainer-right__image-wrapper">
+            <img loading ="lazy" src="assets/explainer-arbeitsflaeche.webp" alt="ADH Zimmerausstattung">
+        </div>
+    </div>
+    <div class="div-decoration-right wohnen-2"></div>
+</section>
+
+
+
+<!-- Intro section Stockwerksausstattung -->
+<section class="intro flex-c">
+    <div class="intro-wrapper">
+        <div class="intro-header wohnen stockwerk">
+            <h2>Stockwerksausstattung</h2>
+            <img class="brush-intro bewerbung" src="assets/main-brush.svg" alt="">
+        </div>
+        <div class="intro-subheader">
+            <p>Auch unsere Stockwerke besitzen eine Grundausstattung, die für alle Mitbewohner der Etage zugänglich und verwendbar sind. Dazu zählen:</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Stockwerk inventory section -->
+<section class="room-inventory flex-c">
+    <div class="inventory-wrapper flex-sb">
+        <div class="box-1">
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>1 große Küche</p>
+            </div>
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>4 Herdplatten</p>
+            </div>
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>3 Kühlschränke</p>
+            </div>
+        </div>
+
+        <div class="box-2">
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>1 Tiefkühlschrank</p>
+            </div>
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>Private Küchenfächer</p>
+            </div>
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>1 Esszimmer</p>
+            </div>
+        </div>
+
+        <div class="box-3">
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>1 Wohnzimmer</p>
+            </div>
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>1 Abstellkammer</p>
+            </div>
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>6 Duschen</p>
+            </div>
+        </div>
+
+        <div class="box-4">
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>2 Einzel-WCs</p>
+            </div>
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>2 Kabinen-WCs</p>
+            </div>
+            <div class="flex-ai">
+                <img src="assets/checkmark.svg">
+                <p>1 Pissoir</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sidescroll-arrows flex-c">
+    <div class="arrow-indicators">
+        <img src="assets/section-arrow-left.svg" alt="">
+        <img src="assets/section-arrow-right.svg" alt="">
+    </div>
+</section>
+
+
+
+<!-- Explainer section 3 -->
+<section class="explainer-left wohnen-3 flex-c">
+    <div class="explainer-left__wrapper flex-sb" data-aos="fade-up" data-aos-duration="1000">
+        <div class="explainer-left__image-wrapper">
+            <img loading ="lazy" src="assets/explainer-kueche.webp" alt="ADH Zimmerausstattung">
+        </div>
+        <div class="explainer-left__text-wrapper wohnen-3">
+            <h6>Stockwerk</h6>
+            <h2>
+                Große Küche für hungrige Bäuche
+                <span class="span-left">
+                    <img class="explainer-left__drop" src="assets/explainer-left-drop-wohnen-3.svg" alt="">
+                </span>
+            </h2>
+            <p>Unsere Küchen besitzen Industriestandards und bieten genug Platz, sodass es nicht zu Koch-Engpässen kommt. Jeder Stock hat neben dem gestellten Equipment ebenfalls eigene Anschaffungen getätigt, wodurch noch die ein oder anderen Zusatzutensilien für dich vorhanden sein können.</p>
+        </div>
+        <!-- <img id="heart-icon" src="assets/heart-icon.svg" alt="" data-aos="zoom-in" data-aos-delay="500"> -->
+    </div>
+    <div class="div-decoration-left wohnen-3"></div>
+</section>
+
+
+
+<!-- Explainer section 4 -->
+<section class="explainer-right wohnen-4 flex-c">
+    <div class="explainer-right__wrapper flex-sb" data-aos="fade-up" data-aos-duration="1000">
+        <div class="explainer-right__text-wrapper wohnen-4">
+            <h6>Stockwerk</h6>
+            <h2>
+                Unsere Flur-Gespräche 
+                <span class="span-right">
+                    <img class="explainer-right__drop" src="assets/explainer-right-drop-wohnen-4.svg" alt="">
+                </span>
+            </h2>
+            <p>In unseren durchmischten Stockwerken bietet sich immer die Möglichkeit nach Austausch an. Ob im Flur, Esszimmer oder im Wohnzimmer - es gibt überall viel zu bereden, was unser Haus so lebendig macht.</p>
+        </div>
+        <div class="explainer-right__image-wrapper">
+            <img loading ="lazy" src="assets/explainer-gespräche.webp " alt="ADH Zimmerausstattung">
+        </div>
+    </div>
+    <div class="div-decoration-right wohnen-4"></div>
+</section>
+
+
+
+
+<!-- pricing table-->
+<section class="pricing-section">
+
+    <div class="intro pricing flex-c">
+        <div class="intro-wrapper">
+            <div class="intro-header">
+                <h2>Zu unseren Mietpreisen</h2>
+                <img class="brush-intro bewerbung" src="assets/main-brush.svg" alt="">
+            </div>
+            <div class="intro-subheader">
+                <p>Wir haben unsere Mietpreise für dich so transparent und fair wie möglich gestaltet. Hier ist eine genaue Übersicht zu den jeweiligen monatlichen Zimmerpreisen.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="pricing flex-c">
+        <div class="pricing-wrapper flex-sb">
+
+            <div class="table">
+                <div class="table__pricetag flex-c">
+                    <div class="pricetag-shadow">
+                        <div class="pricetag-card">
+                            <h5>256€<span>/Monat</span></h5>
+                            <h6>10.5m<sup>2</sup> Zimmer</h6>
+                            <p>(10 Stück)</p>
+                        </div>
+                    </div>
+                    <div class="pricetag-background"></div>
+                </div>
+                <div class="table__list">
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Wasserkosten</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Stromkosten</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Müllabfuhr</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Stockwerksreinigung</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Internetanschluss</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Fernsehanschluss</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Telefonanschluss</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="table">
+                <div class="table__pricetag flex-c">
+                    <div class="pricetag-shadow">
+                        <div class="pricetag-card">
+                            <h5>267€<span>/Monat</span></h5>
+                            <h6>11.5m<sup>2</sup> Zimmer</h6>
+                            <p>(123 Stück)</p>
+                        </div>
+                    </div>
+                    <div class="pricetag-background"></div>
+                </div>
+                <div class="table__list">
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Wasserkosten</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Stromkosten</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Müllabfuhr</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Stockwerksreinigung</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Internetanschluss</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Fernsehanschluss</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Telefonanschluss</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="table margin-top">
+                <div class="table__pricetag flex-c">
+                    <div class="pricetag-shadow">
+                        <div class="pricetag-card">
+                            <h5>288€<span>/Monat</span></h5>
+                            <h6>13.5m<sup>2</sup> Zimmer</h6>
+                            <p>(12 Stück)</p>
+                        </div>
+                    </div>
+                    <div class="pricetag-background"></div>
+                </div>
+                <div class="table__list">
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Wasserkosten</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Stromkosten</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Müllabfuhr</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Stockwerksreinigung</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Internetanschluss</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Fernsehanschluss</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Telefonanschluss</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="table margin-top">
+                <div class="table__pricetag flex-c">
+                    <div class="pricetag-shadow">
+                        <div class="pricetag-card">
+                            <h5>330€<span>/Monat</span></h5>
+                            <h6>20m<sup>2</sup> Zimmer</h6>
+                            <p>(10 Stück)</p>
+                        </div>
+                    </div>
+                    <div class="pricetag-background"></div>
+                </div>
+                <div class="table__list">
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Wasserkosten</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Stromkosten</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Müllabfuhr</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Stockwerksreinigung</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Internetanschluss</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Fernsehanschluss</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg">
+                        <p>Telefonanschluss</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="zusatz-section">
+    <div class="intro zusatz flex-c">
+        <div class="intro-wrapper zusatz">
+            <div class="intro-header">
+                <h2>Relevante Zusatzinfos</h2>
+                <img class="brush-intro bewerbung" src="assets/main-brush.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="zusatz flex-c">
+        <div class="zusatz-wrapper flex-sb">
+
+            <div class="box-zusatz">
+                <img loading ="lazy" src="assets/kautionshoehe-icon.svg" alt="">
+                <h3>Kautionshöhe</h3>
+                <p>Die im Mietvertrag vereinbarte Kaution beträgt 600€ für dein Zimmer und muss vor dem Einzug gemeinsam mit der ersten Monatsmiete überwiesen werden. </p>
+            </div>
+
+            <div class="box-zusatz">
+                <img loading ="lazy" src="assets/vertragslaufzeit-icon.svg" alt="">
+                <h3>Vertragslaufzeit</h3>
+                <p>Kann entweder für das Wintersemester (01.09. - 28.02.) oder das Sommerstemester (01.03. - 31.08.) abgeschlossen werden.</p>
+            </div>
+
+            <div class="box-zusatz">
+                <img loading ="lazy" src="assets/wohnzeit-icon.svg" alt="">
+                <h3>Wohnzeit</h3>
+                <p>Die Wohnzeit beträgt mindestens 1 Semester (6 Monate). Die maximale Wohnzeit liegt bei 8 Semester für Bachelor- und 5 Semester für Masterstudenten.</p>
+            </div> 
+
+            <div class="box-zusatz">
+                <img loading ="lazy" src="assets/parkplatzangebot-icon.svg" alt="">
+                <h3>Parkplatzangebot</h3>
+                <p>Es lässt sich ein Parkplatz im Innenhof (35€ pro Monat) oder ein Parkplatz in der Tiefgarage (50€ pro Monat) anmieten. Bitte wende dich bei Interesse an die Verwaltung</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer section -->
+<footer class="footer-section">
+
+    <div class="application-wrapper wohnen">
+        <div class="application-card">
+            <div class="application-text">
+                <h2>Du bist vom ADH überzeugt?<br><span>Dann schicke uns deine Bewerbung.</span></h2>
+            </div>
+            <div class="application-cta-flex">
+                <div class="application-cta">
+                    <button onclick="location.href='bewerbung.html'">Zur Bewerbung</button>
+                    <img class="application-arrow" src="assets/twisted-arrow.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="application-background"></div>
+    </div>
+
+    <div class="footer-content-area">
+        <div class="footer-wrapper">
+
+            <div class="logo-footer-section">
+                <img src="assets/adh-logo.svg" alt="">
+            </div>
+            <div class="leben-footer-section">
+                <h5>Leben im ADH</h6>
+                <a href="wohnen.html">Wohnen & Preise</a>
+                <br>
+                <a href="bewerbung.html">Bewerbung</a>
+                <br>
+                <a href="leben.html">Leben im ADH</a>
+                <br>
+                <a href="lokales.html">Lokales & Wissenswertes</a>
+                <br>
+                <a href="bewerbung.html#q-and-a-section">FAQ</a>
+            </div>
+
+            <div class="über-footer-section">
+                <h5>Über Uns</h6>
+                <a href="kontakt.html">Kontakt & Mitarbeiter</a>
+                <br>
+                <a href="kontakt.html#anfahrt">Anfahrt</a>
+                <br>
+                <a href="links.html">Links</a>
+                <br>
+                <a href="impressum.html">Impressum</a>
+                <br>
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+
+            <div class="fragen-footer-section">
+                <h5>Du hast noch Fragen?</h6>
+                <p>Rufe uns an oder schreibe uns gerne eine Email an <a href="mailto:heimleitung@alfred-delp-haus.de">heimleitung@alfred-delp-haus.de</a></p>
+            </div>
+        </div>
+    </div>   
+    
+    <div class="footer-credentials-area">
+        <div class="credentials-flex-container">
+            <div class="credentials-line"></div>
+            <div class="credentials-wrapper">
+                <p>&#169 2021 Alfred-Delp-Haus. Created by Jorim Soika</p>
+                <div class="socials">
+                    <div class="fa fa-facebook" onclick="location.href='https://de-de.facebook.com/ADH.Mannheim/';"></div>
+                    <div class="fa fa-instagram" onclick="location.href='https://www.instagram.com/adh_mannheim/?hl=de';"></div>
+                    <div class="fa fa-envelope"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+
+
+
+
+
+</body>

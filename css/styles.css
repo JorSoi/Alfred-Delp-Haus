@@ -456,7 +456,7 @@ nav {
 }
 
 #div-decoration-3 {
-    background-color: #FEEAE5;
+    background-color: #ffe4dd;
     clip-path: polygon(0 2%, 57% 0, 100% 3%, 97% 27%, 100% 55%, 98% 97%, 38% 100%, 0 98%);
 
 }
@@ -607,6 +607,7 @@ nav {
     display: flex;
     justify-content: center;
     position: relative;
+    border: 1px solid black;
 }
 
 .slideshow-selector-wrapper {
@@ -615,6 +616,7 @@ nav {
     justify-content: space-between;
     margin-left: 2vw;
     margin-right: 2vw;
+    border: 5px solid purple;
 }
 
 #hausausstattung,
@@ -684,12 +686,12 @@ nav {
     right: 0;
     margin: auto;
     bottom: 0px;
-    width: 130px;
+    width: 70px;
 }
 
 #arrow-indicators img {
-    max-width: 55px;
-    opacity: 30%;
+    max-width: 80px;
+    opacity: 20%;
 }
 
 
@@ -1839,7 +1841,7 @@ nav {
         display: none;
     }
 
-    /* tstimonial images */
+    /* testimonial images */
     .profile-wrapper img {
         max-width: 150px;
         width: 100%;
