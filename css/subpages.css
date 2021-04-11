@@ -39,6 +39,10 @@ h5 {
     color: #070930; 
 }
 
+sup {
+    font-size: 12px;
+}
+
 .cta {
     width: 140px;
     height: 45px;
@@ -1444,11 +1448,15 @@ align-items: flex-end;
         display: none;
     }
 
+    
     /* section 1 heart icon; section 2 hastag */
     #heart-icon {
         display: none;
     }
+
 }
+
+
 
 
 
@@ -1464,7 +1472,14 @@ align-items: flex-end;
         left: unset;
         right: -20px;
     }
+
 }
+
+
+
+
+
+
 
 /* Wrapping pricing table */
 @media (max-width: 1150px) {
@@ -1481,6 +1496,11 @@ align-items: flex-end;
 }
 
 
+
+
+
+
+
 /* Removing GKG-Logo */
 @media (max-width: 1100px) {
 
@@ -1495,7 +1515,14 @@ align-items: flex-end;
     .nav-links {
         width: 400px;
     }
+
 }
+
+
+
+
+
+
 
 @media (max-width: 1050px) {
 
@@ -1515,13 +1542,18 @@ align-items: flex-end;
         display: flex;
     }
 
+    
     /* leben: enumerator adjustments */
     .enumerator-flexer-1,
     .enumerator-flexer-2 {
         max-width: 47%;
         width: 100%;
     }
+
 }
+
+
+
 
 
 
@@ -1534,6 +1566,7 @@ align-items: flex-end;
         margin-right: 2vw;
     }
 
+    
     /* explainer left wohnen */
     .explainer-left__wrapper,
     .explainer-right__wrapper {
@@ -1574,8 +1607,6 @@ align-items: flex-end;
     }
 
 
-
-
     /* Anleitung margin & padding*/
     .anleitung-wrapper-1,
     .anleitung-wrapper-2,
@@ -1584,6 +1615,7 @@ align-items: flex-end;
         padding: 100px 50px;
     }
 
+    
     /* bewerbung page: formular */
     .formular {
         padding-bottom: 100px;
@@ -1622,6 +1654,7 @@ align-items: flex-end;
         margin-left: 0px;
     }
 
+    
     /* page: bewerbung q&a */
     #q-and-a-section {
         padding-bottom: 75px;
@@ -1631,11 +1664,13 @@ align-items: flex-end;
         margin: 0px 2vw;
     }
 
+    
     /* kontakt page anschrift */
     .anschrift-wrapper {
         margin: 0 2vw;
     }
 
+    
     /* leben: enumerator adjustments */
     .enumerator-wrapper {
         max-width: 500px;
@@ -1658,6 +1693,7 @@ align-items: flex-end;
         display: none;
     }
 
+    
     /* footer */
     .application-card {
         margin: 0 2vw;
@@ -1673,14 +1709,15 @@ align-items: flex-end;
         margin-right: 2vw;
     }
 
+    
     /* Articles */
     .article-wrapper {
         margin: 0 2vw;
     }
 
-    
-    
 }
+
+
 
 
 
@@ -1696,6 +1733,7 @@ align-items: flex-end;
         margin-left: 0px;
         margin-right: 0px;
     }
+
 
     /* Page: Kontakt adjustments */
     .employee-wrapper {
@@ -1740,6 +1778,7 @@ align-items: flex-end;
         margin-top: 30px;
     }
 
+
     /* kontakt iframe section */
     iframe {
         max-width: 400px;
@@ -1748,6 +1787,7 @@ align-items: flex-end;
         margin-bottom: auto;
         display: block;
     }
+
 }
 
 
@@ -1763,6 +1803,10 @@ align-items: flex-end;
     }
 
 }
+
+
+
+
 
 
 
@@ -1785,6 +1829,7 @@ align-items: flex-end;
         text-align: center;
     }
 
+    
     /* kontakt anschrift adjustment */
     .anschrift-wrapper {
         flex-direction: column;
@@ -1801,6 +1846,8 @@ align-items: flex-end;
     }
 
 }
+
+
 
 
 
@@ -1838,6 +1885,7 @@ align-items: flex-end;
         max-width: 100%;
     }
 
+    
     /* explainer left wohnen */
     .explainer-left__wrapper,
     .explainer-right__wrapper {
@@ -1881,6 +1929,7 @@ align-items: flex-end;
         margin-bottom: 10px;
     }
 
+    
     /* Centering footer section */
     .footer-wrapper {
         display: flex;
@@ -1902,25 +1951,25 @@ align-items: flex-end;
         margin-bottom: 15px;
     }
 
+    
     /* reducing margin wohnung intro zusatz */
     .intro-wrapper.zusatz {
         margin-top: 100px;
     }
 
+    
     /* increasing margin kontakt employee */
     .employee.sonja {
         margin-bottom: 90px;
     }
 
+    
     /* Article adjustments */
     .article-wrapper p:nth-child(n+1){
         margin-bottom: 75px;
     }
+
 }
-
-
-
-
 
 
 
@@ -1949,6 +1998,12 @@ align-items: flex-end;
     }
 
 }
+
+
+
+
+
+
 
 @media (max-width: 540px) {
     /* Lokales: headline adjustments */
@@ -2037,6 +2092,7 @@ align-items: flex-end;
     .enumerator-wrapper h2 {
         font-size: 70px;
     }
+
 }
 
 
@@ -2089,11 +2145,13 @@ align-items: flex-end;
         height: 60px;
     }
 
+    
     /* header */
     .header__headline {
         margin-bottom: 15vw;
     }
 
+    
     /* explainer section */
     .div-decoration-left {
         height: 50%;
@@ -2112,6 +2170,7 @@ align-items: flex-end;
         min-width: unset;
     }
 
+    
     /* Introduction-header */
     .intro-header h1 {
         line-height: 3rem;
@@ -2135,6 +2194,7 @@ align-items: flex-end;
         bottom: 0px;
     }
 
+    
     /* Anleitung margin & padding*/
     .anleitung-wrapper-1,
     .anleitung-wrapper-2,
@@ -2149,6 +2209,7 @@ align-items: flex-end;
         margin: 50px 0px;
     }
 
+    
     /* bewerbung page: formular */    
     .formular__content h2 {
         font-size: 32px;
@@ -2166,6 +2227,7 @@ align-items: flex-end;
         margin-left: 0px;
     }
 
+    
     /* Page: Kontakt adjustments */
     .employee-wrapper {
         border-radius: 0px;
@@ -2191,6 +2253,7 @@ align-items: flex-end;
         max-height: auto;
     }
 
+    
     /* leben: finanzreferent ajdustments */
     .explainer-right__text-wrapper.leben-6 h2 {
         font-size: 37px;
@@ -2203,14 +2266,15 @@ align-items: flex-end;
 
 
 
+
 @media (max-width: 380px) {
 
    /* lokales: headline adjustments */
    .header__headline.lokales h1{
     font-size: 45px;
+    }
+
 }
-}
- 
 
 
 
@@ -2238,24 +2302,6 @@ align-items: flex-end;
     /* lokales: headline adjustments */
    .header__headline.lokales h1{
     font-size: 41px;
-}
+    }
 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.further {
-    height: 100vh;
 }
