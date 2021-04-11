@@ -1235,7 +1235,11 @@ padding-bottom: 150px;
 
 
 /* kontakt: anschrift section */
-.anschrift {
+#anschrift,
+.anschrift-lokales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(230, 230, 230);
     padding-top: 50px;
 }
@@ -1356,7 +1360,7 @@ align-items: flex-end;
 
 
 
-/* Page: Alfred Delp Article */
+/* Pages: Alfred Delp, KHG, GKG Article */
 .article-wrapper {
     max-width: 1140px;
     width: 100%;
@@ -1374,6 +1378,20 @@ align-items: flex-end;
 
 
 
+
+
+
+/* Pages: Impressum, Datenschutz */
+.impressum,
+.datenschutz {
+    background-color: #FFF0E2;
+}
+
+.article-wrapper {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 30px;
+}
 
 
 
