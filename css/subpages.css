@@ -226,14 +226,7 @@ nav {
 }
 
 
-/* Nav adjustments kontakt */
-.menu-content-wrapper.kontakt .text-5 a {
-    color: #F14014;
-}
 
-.menu-content-wrapper.kontakt .menu-text-drop-5 {
-    display: block;
-}
 
 /* Nav adjustments wohnen */
 .menu-content-wrapper.wohnen .text-2 a {
@@ -244,7 +237,34 @@ nav {
     display: block;
 }
 
-/* Nav adjustments wohnen */
+/* Nav adjustments leben */
+.menu-content-wrapper.leben .text-3 a {
+    color: #F14014;
+}
+
+.menu-content-wrapper.leben .menu-text-drop-3 {
+    display: block;
+}
+
+/* Nav adjustments lokales */
+.menu-content-wrapper.lokales .text-4 a {
+    color: #F14014;
+}
+
+.menu-content-wrapper.lokales .menu-text-drop-4 {
+    display: block;
+}
+
+/* Nav adjustments kontakt */
+.menu-content-wrapper.kontakt .text-5 a {
+    color: #F14014;
+}
+
+.menu-content-wrapper.kontakt .menu-text-drop-5 {
+    display: block;
+}
+
+/* Nav adjustments bewerbung */
 .menu-content-wrapper.bewerbung .text-6 a {
     color: #F14014;
 }
@@ -252,6 +272,8 @@ nav {
 .menu-content-wrapper.bewerbung .menu-text-drop-6 {
     display: block;
 }
+
+
 
 
 .menu-text-drop-1,
@@ -875,15 +897,22 @@ padding-bottom: 150px;
 }
 
 .explainer-left__text-wrapper.wohnen-1 h6,
-.explainer-right__text-wrapper.wohnen-4 h6 {
+.explainer-right__text-wrapper.wohnen-4 h6,
+.explainer-left__text-wrapper.leben-1 h6,
+.explainer-right__text-wrapper.leben-4 h6,
+.explainer-right__text-wrapper.leben-6 h6  {
     color:#F1872D;
 }
 
-.explainer-right__text-wrapper.wohnen-2 h6 {
+.explainer-right__text-wrapper.wohnen-2 h6,
+.explainer-right__text-wrapper.leben-2 h6,
+.explainer-left__text-wrapper.leben-5 h6 {
     color:#F4431A;
 }
 
-.explainer-left__text-wrapper.wohnen-3 h6 {
+.explainer-left__text-wrapper.wohnen-3 h6,
+.explainer-left__text-wrapper.leben-3 h6,
+.explainer-left__text-wrapper.leben-7 h6 {
     color: #537D42;
 }
 
@@ -942,21 +971,29 @@ padding-bottom: 150px;
 }
 
 .div-decoration-left.wohnen-1,
-.div-decoration-right.wohnen-4 {
+.div-decoration-right.wohnen-4,
+.div-decoration-left.leben-1,
+.div-decoration-right.leben-4,
+.div-decoration-right.leben-6 {
     background-color: #FFF0E2;
 }
 
-.div-decoration-right.wohnen-2 {
+.div-decoration-right.wohnen-2,
+.div-decoration-right.leben-2,
+.div-decoration-left.leben-5 {
     background-color: #ffe4dd;
 }
 
-.div-decoration-left.wohnen-3 {
+.div-decoration-left.wohnen-3,
+.div-decoration-left.leben-3,
+.div-decoration-left.leben-7 {
     background-color: #E0E3DB;
 }
 
 
 .explainer-left.wohnen-1,
-.explainer-left.wohnen-3 {
+.explainer-left.wohnen-3,
+.explainer-left.leben-1 {
     margin-top: 120px;
 }
 
@@ -1220,6 +1257,49 @@ padding-bottom: 150px;
 
 
 
+/* Page: Leben */
+/* enumerator section */
+.enumerator-wrapper {
+    text-align: center;
+    max-width: 1040px;
+    width: 100%;
+    margin: 0 30px;
+    flex-wrap: wrap;
+}
+
+.enumerator-wrapper h2 {
+    font-family: "Ink Free";
+    color: #F4431A;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.enumerator-wrapper h5 {
+    color: #7B88A8;
+    font-weight: 500;
+    font-size: 21px;
+    margin-top: 10px;
+}
+
+.enumerator-wrapper img {
+    opacity: 30%;
+    height: 80px;
+}
+
+.enumerator-flexer-1,
+.enumerator-flexer-2 {
+    max-width: 46%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.piece-1,
+.piece-2,
+.piece-3,
+.piece-4 {
+    max-width: 200px;
+    width: 100%;
+}
 
 
 
@@ -1336,6 +1416,13 @@ padding-bottom: 150px;
     .arrow-indicators {
         display: flex;
     }
+
+    /* leben: enumerator adjustments */
+    .enumerator-flexer-1,
+    .enumerator-flexer-2 {
+        max-width: 47%;
+        width: 100%;
+    }
 }
 
 
@@ -1451,6 +1538,27 @@ padding-bottom: 150px;
         margin: 0 2vw;
     }
 
+    /* leben: enumerator adjustments */
+    .enumerator-wrapper {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 2vw;
+    }
+
+    .enumerator-flexer-1,
+    .enumerator-flexer-2 {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .enumerator-flexer-1 {
+        margin-bottom: 40px;
+    }
+
+    .separator-2 {
+        display: none;
+    }
+
     /* footer */
     .application-card {
         margin: 0 2vw;
@@ -1465,6 +1573,8 @@ padding-bottom: 150px;
         margin-left: 2vw;
         margin-right: 2vw;
     }
+
+    
     
 }
 
@@ -1527,8 +1637,6 @@ padding-bottom: 150px;
     }
 
     /* kontakt iframe section */
-
-
     iframe {
         max-width: 400px;
         max-height: 400px;
@@ -1609,7 +1717,8 @@ padding-bottom: 150px;
 
     /* Explainer adjustment */
     .explainer-left.wohnen-1,
-    .explainer-left.wohnen-3 {
+    .explainer-left.wohnen-3,
+    .explainer-left.leben-1 {
         margin-top: 75px;
     }
 
@@ -1743,11 +1852,13 @@ padding-bottom: 150px;
         font-size: 50px;
     }
 
+
     /* Section content drop */
     .span-left,
     .span-right {
         display: none;
     }
+
 
     /* footer credentials adjustment */
     .credentials-wrapper {
@@ -1763,9 +1874,48 @@ padding-bottom: 150px;
         margin-bottom: 10px;;
     }
 
+
     /* Introduction-header wohnen stockwerk  */
     .intro-header.stockwerk h2 {
         font-size: 32px;
+    }
+
+
+    /* leben: enumerator adjustments */
+    .enumerator-wrapper {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .enumerator-flexer-1,
+    .enumerator-flexer-2 {
+        max-width: 100%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .enumerator-flexer-1 {
+        margin-bottom: 0px;
+    }
+
+    .piece-1,
+    .piece-2,
+    .piece-3,
+    .piece-4 {
+        margin-top: 30px;
+    }
+
+    .separator-1,
+    .separator-3 {
+        display: none;
+    }
+
+    .enumerator-wrapper h5 {
+        margin-top: 0px;
+    }
+
+    .enumerator-wrapper h2 {
+        font-size: 70px;
     }
 }
 
@@ -1830,7 +1980,8 @@ padding-bottom: 150px;
     }
 
     .explainer-left.wohnen-1,
-    .explainer-left.wohnen-3 {
+    .explainer-left.wohnen-3,
+    .explainer-left.leben-1 {
         margin-top: 40px;
     }
     
@@ -1907,10 +2058,10 @@ padding-bottom: 150px;
     }
 
     /* anschrift adjustments */
-.mapouter {
-    width: 100%;
-    height: auto;
-}
+    .mapouter {
+        width: 100%;
+        height: auto;
+    }
 
     iframe,
     #gmap_canvas {
@@ -1918,6 +2069,12 @@ padding-bottom: 150px;
         width: 100%;
         max-height: auto;
     }
+
+    /* leben: finanzreferent ajdustments */
+    .explainer-right__text-wrapper.leben-6 h2 {
+        font-size: 37px;
+    }
+
 }
 
 
@@ -1936,9 +2093,29 @@ padding-bottom: 150px;
         line-height: 2.7rem;
     }
 
-        /* Introduction-header wohnen stockwerk  */
-        .intro-header.stockwerk h2 {
-            font-size: 29px;
-            letter-spacing: -1px;
-        }
+
+    /* Introduction-header wohnen stockwerk  */
+    .intro-header.stockwerk h2 {
+        font-size: 29px;
+        letter-spacing: -1px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.further {
+    height: 100vh;
 }
