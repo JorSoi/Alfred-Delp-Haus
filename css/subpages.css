@@ -109,14 +109,11 @@ nav {
 #gkg-logo {
     height: 45px;
     width: auto;
+    cursor: pointer;
 }
 
 #gkg-logo {
     margin-left: 20px;
-}
-
-#adh-logo {
-    cursor: pointer;
 }
 
 .nav-wrapper__contents {
