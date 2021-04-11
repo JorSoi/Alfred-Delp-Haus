@@ -611,7 +611,6 @@ nav {
     display: flex;
     justify-content: center;
     position: relative;
-    border: 1px solid black;
 }
 
 .slideshow-selector-wrapper {
@@ -620,7 +619,6 @@ nav {
     justify-content: space-between;
     margin-left: 2vw;
     margin-right: 2vw;
-    border: 5px solid purple;
 }
 
 #hausausstattung,
