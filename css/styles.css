@@ -51,6 +51,10 @@ nav {
     width: auto;
 }
 
+#adh-logo {
+    cursor: pointer;
+}
+
 #gkg-logo {
     margin-left: 20px;
 }

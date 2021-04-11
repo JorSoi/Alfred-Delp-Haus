@@ -115,6 +115,10 @@ nav {
     margin-left: 20px;
 }
 
+#adh-logo {
+    cursor: pointer;
+}
+
 .nav-wrapper__contents {
     display: flex;
     align-items: center;
@@ -221,15 +225,41 @@ nav {
     padding: 5px 0px;
 }
 
-.text-6 a {
+
+/* Nav adjustments kontakt */
+.menu-content-wrapper.kontakt .text-5 a {
     color: #F14014;
 }
+
+.menu-content-wrapper.kontakt .menu-text-drop-5 {
+    display: block;
+}
+
+/* Nav adjustments wohnen */
+.menu-content-wrapper.wohnen .text-2 a {
+    color: #F14014;
+}
+
+.menu-content-wrapper.wohnen .menu-text-drop-2 {
+    display: block;
+}
+
+/* Nav adjustments wohnen */
+.menu-content-wrapper.bewerbung .text-6 a {
+    color: #F14014;
+}
+
+.menu-content-wrapper.bewerbung .menu-text-drop-6 {
+    display: block;
+}
+
 
 .menu-text-drop-1,
 .menu-text-drop-2,
 .menu-text-drop-3,
 .menu-text-drop-4,
-.menu-text-drop-5 {
+.menu-text-drop-5,
+.menu-text-drop-6 {
     display: none;
 }
 
@@ -750,6 +780,11 @@ padding-bottom: 150px;
     background-color: #FFF0E2;
 }
 
+/*  footer kontakt customizations*/
+.application-wrapper.kontakt {
+    background-color: rgb(230, 230, 230);;
+}
+
 
 
 
@@ -1073,6 +1108,113 @@ padding-bottom: 150px;
 
 
 
+/* Page: Kontakt */
+/* employee section */
+.employee.martina,
+.employee.joachim,
+.employee.sonja {
+    margin-top: 75px;
+}
+
+.employee.sonja {
+    margin-bottom: 10vw;
+}
+
+
+
+.employee-wrapper {
+    border-radius: 7px;
+    clip-path: polygon(0 0, 50% 2%, 100% 0, 99% 50%, 100% 100%, 50% 98%, 0 100%, 1% 50%);
+    background-color: #fde1da;
+    padding: 50px 70px;
+    margin: 0 30px;
+    max-width: 950px;
+    width: 100%;
+}
+
+.employee-wrapper.martina {
+    background-color: #f7e4cf;
+}
+
+.employee-wrapper.joachim {
+    background-color: #d7dfd5;
+}
+
+.employee-content {
+    align-items: unset;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.employee-img {
+    width: 240px;
+    height: auto;
+}
+
+.contact-icons {
+    width: 130px;
+    margin-top: 6px;
+}
+
+.contact-phone,
+.contact-mail,
+.contact-fax {
+    width: 35px;
+    height: 35px;
+    background-color: #F4431A;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.employee-content h3 {
+    font-size: 23px;
+    color: #070930;
+    font-weight: 900;
+
+}
+
+.employee p {
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.sprechzeiten-wrapper p:nth-child(n+2) {
+    margin-top: 8px;
+}
+
+.sprechzeiten-wrapper h3,
+.contact-wrapper h3 {
+    margin-top: 35px;
+}
+
+
+
+
+/* kontakt: anschrift section */
+.anschrift {
+    background-color: rgb(230, 230, 230);
+    padding-top: 50px;
+}
+
+.anschrift-wrapper {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 30px;
+}
+
+
+.anschrift-content p {
+    font-size: 19px;
+    font-weight: 500;
+    color: #070930;
+}
+
+
+.anschrift-content .paragraph-1 {
+    margin-top: 40px;
+    margin-bottom: 100px
+}
 
 
 
@@ -1304,6 +1446,11 @@ padding-bottom: 150px;
         margin: 0px 2vw;
     }
 
+    /* kontakt page anschrift */
+    .anschrift-wrapper {
+        margin: 0 2vw;
+    }
+
     /* footer */
     .application-card {
         margin: 0 2vw;
@@ -1324,9 +1471,9 @@ padding-bottom: 150px;
 
 
 
-/* Repositioning footer for tablet view */
-@media (max-width: 950px) {
 
+@media (max-width: 950px) {
+    /* Repositioning footer for tablet view */
     .footer-wrapper {
         display: block;
     }
@@ -1335,27 +1482,82 @@ padding-bottom: 150px;
         margin-left: 0px;
         margin-right: 0px;
     }
-}
 
+    /* Page: Kontakt adjustments */
+    .employee-wrapper {
+        padding: 50px 30px;
+    }
 
+    .contact-icons,
+    .employee-img,
+    .sprechzeiten-wrapper {
+        margin: 0 auto;
+    }
 
+    .employee-content h3,
+    .employee p {
+        text-align: center;
+    }
 
+    .employee-content {
+        width: 360px;
+    }
 
+    .contact-wrapper {
+        width: 100%;
+    }
 
-/* application banner adjustments */
-@media (max-width: 892px) {
-
-    .application-cta {
+    .contact-wrapper h3 {
         margin-top: 20px;
+        margin-bottom: 0px;
+        font-weight: 900;
+    }
+
+    .contact-wrapper p {
+        margin-bottom: 10px;
+    }
+
+    .contact-icons {
+        width: 130px;
+        margin-top: 15px;
+    }
+
+    .sprechzeiten-wrapper h3 {
+        margin-top: 30px;
+    }
+
+    /* kontakt iframe section */
+
+
+    iframe {
+        max-width: 400px;
+        max-height: 400px;
+        margin-top: auto;
+        margin-bottom: auto;
+        display: block;
     }
 }
 
 
-/* wohnen zusatz section adjustment */
-@media (max-width: 830px) {
 
+
+
+
+
+@media (max-width: 892px) {
+/* application banner adjustments */
+    .application-cta {
+        margin-top: 20px;
+    }
+
+}
+
+
+
+@media (max-width: 830px) {
+    /* wohnen zusatz section adjustment */
     .zusatz-wrapper {
-        max-width: 360px;
+        max-width: 400px;
         margin: 0 2vw;
     }
 
@@ -1370,6 +1572,22 @@ padding-bottom: 150px;
     .box-zusatz p {
         text-align: center;
     }
+
+    /* kontakt anschrift adjustment */
+    .anschrift-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .anschrift-content .paragraph-1 {
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    .anschrift-content .paragraph-2 {
+        margin-bottom: 20px;
+    }
+
 }
 
 
@@ -1387,6 +1605,7 @@ padding-bottom: 150px;
     #hamburger-icon {
         display: block;
     }
+
 
     /* Explainer adjustment */
     .explainer-left.wohnen-1,
@@ -1410,10 +1629,7 @@ padding-bottom: 150px;
     .explainer-right__wrapper {
         margin-bottom: 75px;
     }
-
-
-
-    
+   
 
     /* Reducing margin at introduction wrapper 1 & 2 */
     .intro-wrapper {
@@ -1422,14 +1638,14 @@ padding-bottom: 150px;
     }
 
 
-
     /* page: bewerbung update */
     .anleitung-update-section {
         margin: 10vw 0px;
     }
 
-     /* Application banner adjustment */
-     .application-text {
+    
+    /* Application banner adjustment */
+    .application-text {
         text-align: center;
         margin: 0 auto;
     }
@@ -1475,6 +1691,11 @@ padding-bottom: 150px;
     /* reducing margin wohnung intro zusatz */
     .intro-wrapper.zusatz {
         margin-top: 100px;
+    }
+
+    /* increasing margin kontakt employee */
+    .employee.sonja {
+        margin-bottom: 90px;
     }
 }
 
@@ -1671,6 +1892,31 @@ padding-bottom: 150px;
         height: auto;
         margin-bottom: 50px;
         margin-left: 0px;
+    }
+
+    /* Page: Kontakt adjustments */
+    .employee-wrapper {
+        border-radius: 0px;
+        clip-path: polygon(0 0, 50% 1%, 100% 0, 100% 100%, 50% 99%, 0 100%);
+        padding: 50px 0;
+        margin: 0;
+    }
+
+    .employee-content {
+        margin: 0 2vw;
+    }
+
+    /* anschrift adjustments */
+.mapouter {
+    width: 100%;
+    height: auto;
+}
+
+    iframe,
+    #gmap_canvas {
+        max-width: 420px;
+        width: 100%;
+        max-height: auto;
     }
 }
 
