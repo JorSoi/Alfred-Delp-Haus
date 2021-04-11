@@ -1039,14 +1039,14 @@ padding-bottom: 150px;
 }
 
 .pricetag-card h5 {
-    font-family: "Ink Free";
+    font-family: "Ink Free", "Dm Sans";
     color: #F4431A;
     font-size: 50px;
     font-weight: 600;
 }
 
 .pricing span {
-    font-family: "Ink Free";
+    font-family: "Ink Free", "Dm Sans";
     color: #F4431A;
     font-size: 20px;
     font-weight: 600;
@@ -1275,7 +1275,7 @@ padding-bottom: 150px;
 }
 
 .enumerator-wrapper h2 {
-    font-family: "Ink Free";
+    font-family: "Ink Free", "Dm Sans";
     color: #F4431A;
     font-size: 60px;
     font-weight: 600;

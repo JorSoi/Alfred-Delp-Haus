@@ -257,7 +257,7 @@ nav {
 }
 
 #youthful {
-    font-family: "Ink Free";
+    font-family: "Ink Free", "Dm Sans";
     font-weight: 600;
     font-size: 110px;
     color: #F14014;
@@ -564,7 +564,7 @@ nav {
     position: absolute;
     top: 40px;
     left: 10px;
-    font-family: "Ink Free";
+    font-family: "Ink Free", "Dm Sans";
     font-weight: 400;
     font-size: 4rem;
     color: #F4431A;
