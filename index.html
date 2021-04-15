@@ -31,11 +31,13 @@
     <link href="http://fonts.cdnfonts.com/css/ink-free" rel="stylesheet">
 
     <!-- Styling -->
-    <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
     
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="scripts/script.js" async></script>
 </head>
 
@@ -289,76 +291,56 @@
         </section>
 
         <!-- Slideshow section -->
-        <section class="slideshow-section">
-
-            <div class="slideshow-1">
-                <div class="slideshow-frame">
-                    <img id="img1" src="assets/haus-bar.webp" alt="ADH Bar">
-                    <img id="img2" src="assets/haus-kapelle.webp" alt="ADH Kapelle">
-                    <img id="img3" src="assets/haus-saal.webp" alt="ADH Saal">
-                    <img id="img4" src="assets/haus-gemeinschaftsraum.webp" alt="ADH Gemeinschaftsraum">
-                    <img id="img5" src="assets/haus-musikzimmer.webp" alt="ADH Musikzimmer">
-                    <img id="img6" src="assets/haus-tiefgarage.webp" alt="ADH Tiefgarage">
-
-                    <button class="nav-left-1 fa fa-angle-left fa-lg"></button>
-                    <button class="nav-right-1 fa fa-angle-right fa-lg"></button>
-                    <div class="nav-counter">
-                        <div id="counter-1"></div>
-                        <div id="counter-2"></div>
-                        <div id="counter-3"></div>
-                        <div id="counter-4"></div>
-                        <div id="counter-5"></div>
-                        <div id="counter-6"></div>
-                    </div>
+        <section class="slideshow-section ">
+            <div class="swiper-container slideshow-1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" data-swiper-autoplay="4000"><img src="assets/haus-bar.webp" alt=""></div>
+                    <div class="swiper-slide" data-swiper-autoplay="4000"><img src="assets/haus-kapelle.webp" alt=""></div>
+                    <div class="swiper-slide" data-swiper-autoplay="4000"><img src="assets/haus-saal.webp" alt=""></div>
+                    <div class="swiper-slide" data-swiper-autoplay="4000"><img src="assets/haus-gemeinschaftsraum.webp" alt=""></div>
+                    <div class="swiper-slide" data-swiper-autoplay="4000"><img src="assets/haus-musikzimmer.webp" alt=""></div>
+                    <div class="swiper-slide" data-swiper-autoplay="4000"><img src="assets/haus-tiefgarage.webp" alt=""></div>
                 </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next fa fa-angle-right fa-lg"></div>
+                <div class="swiper-button-prev fa fa-angle-left fa-lg"></div>
             </div>
 
-            <div class="slideshow-2">
-                <div class="slideshow-frame">
-                    <img id="img7" src="assets/stockwerk-esszimmer.webp" alt="ADH Stockwerksausstattung">
-                    <img id="img8" src="assets/stockwerk-wohnzimmer.webp" alt="ADH Stockwerksausstattung">
-                    <img id="img9" src="assets/stockwerk-kueche.webp" alt="ADH Stockwerksausstattung">
-                    <img id="img10" src="assets/stockwerk-flur.webp" alt="ADH Stockwerksausstattung">
-                    <img id="img11" src="assets/stockwerk-esszimmer.webp" alt="ADH Stockwerksausstattung">
-                    <img id="img12" src="assets/stockwerk-flur.webp" alt="ADH Stockwerksausstattung">
-
-                    <button class="nav-left-2 fa fa-angle-left fa-lg"></button>
-                    <button class="nav-right-2 fa fa-angle-right fa-lg"></button>
-                    <div class="nav-counter">
-                        <div id="counter-1"></div>
-                        <div id="counter-2"></div>
-                        <div id="counter-3"></div>
-                        <div id="counter-4"></div>
-                        <div id="counter-5"></div>
-                        <div id="counter-6"></div>
-                    </div>
+            <div class="swiper-container slideshow-2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" data-swiper-autoplay="4000"><img src="assets/stockwerk-esszimmer.webp" alt=""></div>
+                    <div class="swiper-slide" data-swiper-autoplay="4000"><img src="assets/stockwerk-wohnzimmer.webp" alt=""></div>
+                    <div class="swiper-slide" data-swiper-autoplay="4000"><img src="assets/stockwerk-kueche.webp" alt=""></div>
+                    <div class="swiper-slide" data-swiper-autoplay="4000"><img src="assets/stockwerk-flur.webp" alt=""></div>
+                    <div class="swiper-slide" data-swiper-autoplay="4000"><img src="assets/stockwerk-wohnzimmer.webp" alt=""></div>
+                    <div class="swiper-slide" data-swiper-autoplay="4000"><img src="assets/stockwerk-kueche.webp" alt=""></div>
                 </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next fa fa-angle-right fa-lg"></div>
+                <div class="swiper-button-prev fa fa-angle-left fa-lg"></div>
             </div>
 
-
-
-            <div class="slideshow-3">
-                <div class="slideshow-frame">
-                    <img id="img13" src="assets/zimmer-bett.webp" alt="ADH Zimmerausstattung">
-                    <img id="img14" src="assets/zimmer-schublade.webp" alt="ADH Zimmerausstattung">
-                    <img id="img15" src="assets/haus-saal.webp" alt="ADH Zimmerausstattung">
-                    <img id="img16" src="assets/haus-gemeinschaftsraum.webp" alt="ADH Zimmerausstattung">
-                    <img id="img17" src="assets/haus-musikzimmer.webp" alt="ADH Zimmerausstattung">
-                    <img id="img18" src="assets/haus-tiefgarage.webp" alt="ADH Zimmerausstattung">
-
-                    <button class="nav-left-3 fa fa-angle-left fa-lg"></button>
-                    <button class="nav-right-3 fa fa-angle-right fa-lg"></button>
-                    <div class="nav-counter">
-                        <div id="counter-1"></div>
-                        <div id="counter-2"></div>
-                        <div id="counter-3"></div>
-                        <div id="counter-4"></div>
-                        <div id="counter-5"></div>
-                        <div id="counter-6"></div>
-                    </div>
+            <div class="swiper-container slideshow-3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" data-swiper-autoplay="4000"><img src="assets/zimmer-bett.webp" alt=""></div>
+                    <div class="swiper-slide" data-swiper-autoplay="4000"><img src="assets/zimmer-schublade.webp" alt=""></div>
+                    <div class="swiper-slide" data-swiper-autoplay="4000"><img src="assets/zimmer-schublade.webp" alt=""></div>
+                    <div class="swiper-slide" data-swiper-autoplay="4000"><img src="assets/zimmer-schublade.webp" alt=""></div>
+                    <div class="swiper-slide" data-swiper-autoplay="4000"><img src="assets/zimmer-schublade.webp" alt=""></div>
+                    <div class="swiper-slide" data-swiper-autoplay="4000"><img src="assets/zimmer-schublade.webp" alt=""></div>
                 </div>
-            </div>    
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next fa fa-angle-right fa-lg"></div>
+                <div class="swiper-button-prev fa fa-angle-left fa-lg"></div>
+            </div>
         </section>
+
 
 
 
@@ -582,6 +564,9 @@
             </div>
         </div>
     </footer>
+
+
+
 </body>
 
 </html>

@@ -1,6 +1,26 @@
 //Initializing "Animate on Scroll Library"
 AOS.init();
 
+// Initializing Swiper Library
+const initializeSwiper = () => {
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 0,
+        speed: 500,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+}
 
 
 
@@ -161,131 +181,13 @@ menuCloser.addEventListener('click', closing);
 
 
 
-// Trigger slideshow 1
-const triggerSlideshow1 = () => {
-    const img1 = document.getElementById('img1');
-    const buttonLeft1 = document.querySelector('.nav-left-1');
-    const buttonRight1 = document.querySelector('.nav-right-1');
-    let multiplier1 = 0;
-    clearInterval(automove);
-
-    const slideRightAnimation = () => {
-        multiplier1 += 100;
-        clearInterval(automove);
-        automove = setInterval(slideRightAnimation, '5000');
-        if (multiplier1 > 500) {
-            img1.style.marginLeft = '0';
-            multiplier1 = 0;
-        } else {
-            img1.style.marginLeft = `-${multiplier1}%`;
-        }
-    }
-
-    const slideLeftAnimation = () => {
-        multiplier1 -= 100;
-        clearInterval(automove);
-        automove = setInterval(slideRightAnimation, '5000');
-        if (multiplier1 < 0) {
-            img1.style.marginLeft = '-500%';
-            multiplier1 = 500; 
-        } else {
-        img1.style.marginLeft = `-${multiplier1}%`;
-        }
-    }
-
-    buttonRight1.addEventListener('click', slideRightAnimation);
-    buttonLeft1.addEventListener('click', slideLeftAnimation);
-    var automove = setInterval(slideRightAnimation, '5000');
-    clearInterval(automove);
-    automove = setInterval(slideRightAnimation, '5000');
-
-}
 
 
 
 
 
 
-// Trigger slideshow 2
-const triggerSlideshow2 = () => {
-    const img7 = document.getElementById('img7');
-    const buttonLeft2 = document.querySelector('.nav-left-2');
-    const buttonRight2 = document.querySelector('.nav-right-2');
-    let multiplier2 = 0;
-    clearInterval(automove);
 
-    const slideRightAnimation = () => {
-        multiplier2 += 100;
-        clearInterval(automove);
-        automove = setInterval(slideRightAnimation, '5000');
-        if (multiplier2 > 500) {
-            img7.style.marginLeft = '0';
-            multiplier2 = 0;
-        } else {
-            img7.style.marginLeft = `-${multiplier2}%`;
-        }
-    }
-
-    const slideLeftAnimation = () => {
-        multiplier2 -= 100;
-        clearInterval(automove);
-        automove = setInterval(slideRightAnimation, '5000');
-        if (multiplier2 < 0) {
-            img7.style.marginLeft = '-500%';
-            multiplier2 = 500; 
-        } else {
-        img7.style.marginLeft = `-${multiplier2}%`;
-        }
-    }
-
-    buttonRight2.addEventListener('click', slideRightAnimation);
-    buttonLeft2.addEventListener('click', slideLeftAnimation);
-    var automove = setInterval(slideRightAnimation, '5000');
-    clearInterval(automove);
-    automove = setInterval(slideRightAnimation, '5000');
-}
-
-
-
-
-// Trigger slideshow 3
-const triggerSlideshow3 = () => {
-    const img13 = document.getElementById('img13');
-    const buttonLeft3 = document.querySelector('.nav-left-3');
-    const buttonRight3 = document.querySelector('.nav-right-3');
-    let multiplier3 = 0;
-    clearInterval(automove);
-
-    const slideRightAnimation = () => {
-        multiplier3 += 100;
-        clearInterval(automove);
-        automove = setInterval(slideRightAnimation, '5000');
-        if (multiplier3 > 500) {
-            img13.style.marginLeft = '0';
-            multiplier3 = 0;
-        } else {
-            img13.style.marginLeft = `-${multiplier3}%`;
-        }
-    }
-
-    const slideLeftAnimation = () => {
-        multiplier3 -= 100;
-        clearInterval(automove);
-        automove = setInterval(slideRightAnimation, '5000');
-        if (multiplier3 < 0) {
-            img13.style.marginLeft = '-500%';
-            multiplier3 = 500; 
-        } else {
-        img13.style.marginLeft = `-${multiplier3}%`;
-        }
-    }
-
-    buttonRight3.addEventListener('click', slideRightAnimation);
-    buttonLeft3.addEventListener('click', slideLeftAnimation);
-    var automove = setInterval(slideRightAnimation, '5000');
-    clearInterval(automove);
-    automove = setInterval(slideRightAnimation, '5000');
-}
 
 
 
@@ -318,10 +220,10 @@ const slideshow3 = document.querySelector('.slideshow-3');
 const openSlideshow1 = () => {
 
     // Slideshow 1 activated
-    triggerSlideshow1();
     selectorText1.style.color = '#070930';
     selectorUnderline1.style.display = 'block';
-    slideshow1.style.display = 'flex';
+    slideshow1.style.display = 'block';
+    initializeSwiper();
 
     //Other slideshows deactivated
     selectorText2.style.color = '';
@@ -338,10 +240,10 @@ const openSlideshow1 = () => {
 const openSlideshow2 = () => {
 
     // Slideshow 2 activated
-    triggerSlideshow2();
     selectorText2.style.color = '#070930';
     selectorUnderline2.style.display = 'block';
-    slideshow2.style.display = 'flex';
+    slideshow2.style.display = 'block';
+    initializeSwiper();
 
     //Other slideshows deactivated
     selectorText1.style.color = '';
@@ -356,10 +258,10 @@ const openSlideshow2 = () => {
 const openSlideshow3 = () => {
 
     // Slideshow 1 activated
-    triggerSlideshow3();
     selectorText3.style.color = '#070930';
     selectorUnderline3.style.display = 'block';
-    slideshow3.style.display = 'flex';
+    slideshow3.style.display = 'block';
+    initializeSwiper();
 
     //Other slideshows deactivated
     selectorText1.style.color = '';
@@ -378,7 +280,6 @@ zimmerausstattung.addEventListener('click', openSlideshow3);
 
 // By default slideshow 1 activated
 openSlideshow1();
-slideshow1.style.display = 'flex';
 // Default selector state
 selectorText1.style.color = '#070930';
 selectorUnderline1.style.display = 'unset';
