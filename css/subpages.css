@@ -96,8 +96,8 @@ nav {
     background-color: #FFF0E2;
     display: flex;
     justify-content: center;
-    box-shadow: 1px 1px 10px #ccbfb2;
     z-index: 1000;
+    transition: box-shadow 0.4s ease;
 }
 
 .nav-wrapper {
@@ -114,6 +114,7 @@ nav {
     height: 45px;
     width: auto;
     cursor: pointer;
+    user-select: none;
 }
 
 #gkg-logo {
@@ -414,6 +415,9 @@ nav {
     display: block;
     margin-left: auto; 
     margin-right: auto;
+    user-select: none;
+    -webkit-touch-callout: none;
+    pointer-events: none;
 }
 
 .anleitung-wrapper-1 h4,
@@ -460,6 +464,9 @@ nav {
     width: 100%;
     height: auto;
     display: block;
+    user-select: none;
+    -webkit-touch-callout: none;
+    pointer-events: none;
 }
 
 .anleitung-section-2 {
@@ -506,6 +513,7 @@ nav {
     max-width: 300px;
     height: auto;
     margin-left: 50px;
+    cursor: pointer;
 }
 
 .formular__content p {
@@ -531,6 +539,9 @@ nav {
     position: absolute;
     bottom: -70px;
     left: -30px;
+    user-select: none;
+    -webkit-touch-callout: none;
+    pointer-events: none;
 }
 
 
@@ -569,19 +580,18 @@ padding-bottom: 150px;
 }
 
 
-.fa-angle-down {
-    -webkit-text-stroke: 1px rgb(94, 94, 94);
-    margin-top: 10px;
-    margin-right: 6px;
-}
-
-.icon-1,
-.icon-2,
-.icon-3,
-.icon-4,
-.icon-5 {
-    transition: .2s ease;
+.question-icon-1,
+.question-icon-2,
+.question-icon-3,
+.question-icon-4,
+.question-icon-5 {
+    color: #070930bd;
+    -webkit-text-stroke: 1px #070930bd;
+    margin-top: auto;
+    margin-bottom: auto;
     margin-left: 20px;
+    margin-right: 6px;
+    transition: .4s ease;
 }
 
 
@@ -590,12 +600,19 @@ padding-bottom: 150px;
 #text-q3,
 #text-q4,
 #text-q5 {
-    margin-top: 20px;
+    margin-top: 0px;
     display: none;
     margin-bottom: 40px;
 }
 
+.question-wrapper p {
+    font-size: 18px;
+    max-width: 95%;
+}
 
+.question-wrapper hr {
+    border: 1px solid #0709302d;
+}
 
 
 
@@ -670,6 +687,9 @@ padding-bottom: 150px;
     position: absolute;
     bottom: -70px;
     left: -20px;
+    user-select: none;
+    -webkit-touch-callout: none;
+    pointer-events: none;
 }
 
 
@@ -703,6 +723,8 @@ padding-bottom: 150px;
 .logo-footer-section img {
     width: 100%;
     height: auto;
+    user-select: none;
+    -webkit-touch-callout: none;
 }
 
 .logo-footer-section, 
@@ -1645,6 +1667,7 @@ align-items: flex-end;
         left: 0;
         right: 90px;
         margin: auto;
+
     }
 
     .bewerbungsvorlage {
@@ -1844,6 +1867,11 @@ align-items: flex-end;
     .anschrift-content .paragraph-2 {
         margin-bottom: 20px;
     }
+
+    a[href^=tel] {
+        text-decoration:inherit;
+        color: inherit;
+     }
 
 }
 

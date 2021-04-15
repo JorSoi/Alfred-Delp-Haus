@@ -26,7 +26,7 @@
     
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="scripts/script.js" async></script>
+    <script src="scripts/accordon.js" async></script>
 </head>
 
 
@@ -40,8 +40,9 @@
 
 <body>
 
+
  <!-- Navigation Bar -->
- <nav>
+ <nav id="scroll-shadow">
     <div class="nav-wrapper flex-sb">
 
         <div class="nav-wrapper__logos flex-c">
@@ -226,7 +227,7 @@
             </div>
         </div> 
 
-        <img class="bewerbungsvorlage" src="assets/bewerbungsvorlage.webp" alt="Bewerbungsvorlage ADH">
+        <img class="bewerbungsvorlage" src="assets/bewerbungsvorlage.webp" alt="Bewerbungsvorlage ADH" onclick="window.open('assets/Bewerbungsvorlage.pdf')">
     </div>
 </section>
 
@@ -253,40 +254,40 @@
 
             <div class="question-1">
               <h5>Kann ich mich schon ohne Studienplatzzulassung bewerben?</h5>
-              <i class="fa fa-angle-down fa-lg icon-1"></i>
+              <i class="fa fa-angle-down fa-lg question-icon-1"></i>
             </div>
               <div id="text-q1">
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                <p>Du kannst dich auch ohne deine Studienplatzzulassung im ADH bewerben. Dein Mietvertrag wird nämlich nur dann gültig, wenn du eine Studienbescheinigung vor Beginn der Mietzeit vorzuweisen hast. Solltest du also keinen Studienplatz bekommen erlischt gleichzeitig das Mietangebot bei uns.</p>
               </div>
               <hr>
       
       
               <div class="question-2">
                 <h5>Kann ich mich auch während des Semesters bewerben?</h5>
-                <i class="fa fa-angle-down fa-lg icon-2"></i>
+                <i class="fa fa-angle-down fa-lg question-icon-2"></i>
               </div>
               <div id="text-q2">
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                <p>Du kannst deine Bewerbung zu jeder Zeit verfassen und an uns senden. Es ist jedoch wichtig zu wissen, dass unsere Mietverträge nur zu den geschilderten Zeiträumen des HWS und FSS laufen.</p>
               </div>
               <hr>
       
                 
               <div class="question-3">
                 <h5>Wie schnell werden die Zusagen bzw. Absagen verteilt?</h5>
-                <i class="fa fa-angle-down fa-lg icon-3"></i>
+                <i class="fa fa-angle-down fa-lg question-icon-3"></i>
               </div>
               <div id="text-q3">
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                <p>Nachdem du an unserem Auswahlverfahren teilgenommen hast werden wir uns bemühen die Zu- bzw. Absagen so schnell wie möglich zu versenden. Natürlich können wir dir keine genauen Zeiten nennen, jedoch wurden die Bestätigungen in den vergangen Jahren ca 1-2 Wochen später versendet.</p>
               </div>
               <hr>
       
       
               <div class="question-4">
                 <h5>Was sollte ich beim Einzug mitnehmen?</h5>
-                <i class="fa fa-angle-down fa-lg icon-4"></i>
+                <i class="fa fa-angle-down fa-lg question-icon-4"></i>
               </div>
               <div id="text-q4">
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                <p>Da unsere Zimmer bereits möbliert sind, brauchst du prinzipiell keine weiteren Möbel besorgen und mitbringen. Einige Student/-innen nehmen jedoch ihren eigenen Bürostuhl oder ihre eigenen Küchensets mit. Das ist aber jedem selbst überlassen.</p>
               </div>
               <hr>
       
@@ -294,10 +295,10 @@
       
               <div class="question-5">
                 <h5>Muss ich als Student in Mannheim immatrikuliert sein?</h5>
-                <i class="fa fa-angle-down fa-lg icon-5"></i>
+                <i class="fa fa-angle-down fa-lg question-icon-5"></i>
               </div>
               <div id="text-q5">
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                <p>Ja, damit dein Mietvertrag gültig ist, musst du uns beweisen können, dass du an einer Universität, Hochschule oder sonstigen staatlich anerkannten Bildungseinrichtung immatrikuliert bist.</p>
               </div>
               <hr>
       
@@ -361,6 +362,9 @@
             </div>
         </div>
     </div>
+
 </footer>
+
+
 </body>
 </html>
