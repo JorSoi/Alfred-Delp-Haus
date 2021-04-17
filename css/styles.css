@@ -1306,15 +1306,12 @@ nav {
     align-items: center;
 }
 
-.socials .fa-facebook {
-    font-size: 1.4rem;
-    cursor: pointer;
-}
-
+.socials .fa-facebook,
 .socials .fa-instagram {
     font-size: 1.4rem;
     cursor: pointer;
 }
+
 
 .socials .fa-envelope {
     font-size: 1.2rem;

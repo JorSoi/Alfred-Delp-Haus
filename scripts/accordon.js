@@ -3,6 +3,7 @@ AOS.init();
 
 
 
+// Navbar shadow on scroll
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -12,6 +13,37 @@ function scrollFunction() {
     document.getElementById("scroll-shadow").style.boxShadow = "none";
   }
 }
+
+
+
+
+
+
+
+
+
+// Opening and Closing mobile menu
+const hamburgerIcon = document.getElementById('hamburger-icon');
+const menuCloser = document.getElementById('menu-closer');
+const mobileOpened = document.getElementById('mobile-opened');
+document.body.style.overflow = 'unset';
+
+
+const opening = () =>{
+    mobileOpened.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+    document.body.style.height = '100%';
+    document.body.style.width = '100%';
+}
+
+const closing = () => {
+    mobileOpened.style.display = 'none';
+    document.body.style.overflow = 'unset';
+}
+
+hamburgerIcon.addEventListener('click', opening);
+menuCloser.addEventListener('click', closing);
+
 
 
 
