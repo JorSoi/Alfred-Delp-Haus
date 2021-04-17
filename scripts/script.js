@@ -2,24 +2,68 @@
 AOS.init();
 
 // Initializing Swiper Library
-const initializeSwiper = () => {
-    var swiper = new Swiper('.swiper-container', {
-        spaceBetween: 0,
-        speed: 500,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
+const initializeSwiper1 = () => {
+    var swiper1 = new Swiper('.slideshow-1', {
+    spaceBetween: 10,
+    speed: 500,
+    centeredSlides: true,
+    autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+    observer: true,
+    },
+    pagination: {
+        el: '.swiper-pagination1',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
+    });
+}
+
+const initializeSwiper2 = () => {
+    var swiper2 = new Swiper('.slideshow-2', {
+    spaceBetween: 10,
+    speed: 500,
+    centeredSlides: true,
+    autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+    observer: true,
+    },
+    pagination: {
+        el: '.swiper-pagination2',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
+    });
+}
+
+var swiper3;
+const initializeSwiper3 = () => {
+    var swiper3 = new Swiper('.slideshow-3', {
+    spaceBetween: 10,
+    speed: 500,
+    centeredSlides: true,
+    autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+    observer: true,
+    },
+    pagination: {
+        el: '.swiper-pagination3',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
+    });
 }
 
 
@@ -211,8 +255,35 @@ const selectorUnderline3 = document.getElementById('selector-underline-3');
 const slideshow3 = document.querySelector('.slideshow-3');
 
 
+var initialization1 = (function() {
+    var executed1 = false;
+    return function() {
+        if (!executed1) {
+            executed1 = true;
+            initializeSwiper1();
+        }
+    };
+})();
 
+var initialization2 = (function() {
+    var executed2 = false;
+    return function() {
+        if (!executed2) {
+            executed2 = true;
+            initializeSwiper2();
+        }
+    };
+})();
 
+var initialization3 = (function() {
+    var executed3 = false;
+    return function() {
+        if (!executed3) {
+            executed3 = true;
+            initializeSwiper3();
+        }
+    };
+})();
 
 
 
@@ -223,8 +294,7 @@ const openSlideshow1 = () => {
     selectorText1.style.color = '#070930';
     selectorUnderline1.style.display = 'block';
     slideshow1.style.display = 'block';
-    initializeSwiper();
-
+    
     //Other slideshows deactivated
     selectorText2.style.color = '';
     selectorUnderline2.style.display = '';
@@ -243,7 +313,6 @@ const openSlideshow2 = () => {
     selectorText2.style.color = '#070930';
     selectorUnderline2.style.display = 'block';
     slideshow2.style.display = 'block';
-    initializeSwiper();
 
     //Other slideshows deactivated
     selectorText1.style.color = '';
@@ -261,7 +330,7 @@ const openSlideshow3 = () => {
     selectorText3.style.color = '#070930';
     selectorUnderline3.style.display = 'block';
     slideshow3.style.display = 'block';
-    initializeSwiper();
+    
 
     //Other slideshows deactivated
     selectorText1.style.color = '';
@@ -273,16 +342,15 @@ const openSlideshow3 = () => {
     slideshow2.style.display = '';
 }
 
-hausausstattung.addEventListener('click', openSlideshow1);
-stockwerksausstattung.addEventListener('click', openSlideshow2);
-zimmerausstattung.addEventListener('click', openSlideshow3);
+hausausstattung.addEventListener('click', () => {openSlideshow1(); initialization1();});
+stockwerksausstattung.addEventListener('click', () => {openSlideshow2(); initialization2();});
+zimmerausstattung.addEventListener('click', () => {openSlideshow3(); initialization3();});
 
 
 // By default slideshow 1 activated
 openSlideshow1();
-// Default selector state
-selectorText1.style.color = '#070930';
-selectorUnderline1.style.display = 'unset';
+initialization1();
+
 
 
 

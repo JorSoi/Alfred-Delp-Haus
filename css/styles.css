@@ -617,6 +617,7 @@ nav {
     justify-content: space-between;
     margin-left: 2vw;
     margin-right: 2vw;
+    user-select: none;
 }
 
 #hausausstattung,
@@ -719,8 +720,8 @@ nav {
 }
 
 .swiper-wrapper img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100% !important;
+    height: auto !important;
 }
 
 .swiper-pagination-bullet {
