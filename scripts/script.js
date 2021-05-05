@@ -7,10 +7,10 @@ const initializeSwiper1 = () => {
     spaceBetween: 10,
     speed: 500,
     centeredSlides: true,
+    loop: true,
     autoplay: {
     delay: 2500,
     disableOnInteraction: false,
-    observer: true,
     },
     pagination: {
         el: '.swiper-pagination1',
@@ -28,10 +28,10 @@ const initializeSwiper2 = () => {
     spaceBetween: 10,
     speed: 500,
     centeredSlides: true,
+    loop: true,
     autoplay: {
     delay: 2500,
     disableOnInteraction: false,
-    observer: true,
     },
     pagination: {
         el: '.swiper-pagination2',
@@ -50,10 +50,10 @@ const initializeSwiper3 = () => {
     spaceBetween: 10,
     speed: 500,
     centeredSlides: true,
+    loop: true,
     autoplay: {
     delay: 2500,
     disableOnInteraction: false,
-    observer: true,
     },
     pagination: {
         el: '.swiper-pagination3',
@@ -406,6 +406,14 @@ const profile3 = document.getElementById('profile-3');
 const testimonialText3 = document.getElementById('testimonial-text-3');
 const testimonialNav3 = document.getElementById('testimonial-nav3');
 
+const profile4 = document.getElementById('profile-4');
+const testimonialText4 = document.getElementById('testimonial-text-4');
+const testimonialNav4 = document.getElementById('testimonial-nav4');
+
+const profile5 = document.getElementById('profile-5');
+const testimonialText5 = document.getElementById('testimonial-text-5');
+const testimonialNav5 = document.getElementById('testimonial-nav5');
+
 
 
 
@@ -429,6 +437,12 @@ const selectProfile = () => {
             profile3.style.display = '';
             testimonialNav3.style.backgroundColor = '';
             testimonialText3.style.display = '';
+            profile4.style.display = '';
+            testimonialNav4.style.backgroundColor = '';
+            testimonialText4.style.display = '';
+            profile5.style.display = '';
+            testimonialNav5.style.backgroundColor = '';
+            testimonialText5.style.display = '';
             break;
 
         case 1:
@@ -441,6 +455,12 @@ const selectProfile = () => {
             profile3.style.display = '';
             testimonialNav3.style.backgroundColor = '';
             testimonialText3.style.display = '';
+            profile4.style.display = '';
+            testimonialNav4.style.backgroundColor = '';
+            testimonialText4.style.display = '';
+            profile5.style.display = '';
+            testimonialNav5.style.backgroundColor = '';
+            testimonialText5.style.display = '';
             break;
 
         case 2:
@@ -453,6 +473,48 @@ const selectProfile = () => {
             profile3.style.display = 'block';
             testimonialNav3.style.backgroundColor = '#F1872D';
             testimonialText3.style.display = 'block';
+            profile4.style.display = '';
+            testimonialNav4.style.backgroundColor = '';
+            testimonialText4.style.display = '';
+            profile5.style.display = '';
+            testimonialNav5.style.backgroundColor = '';
+            testimonialText5.style.display = '';
+            break;
+
+        case 3:
+            profile1.style.display = '';
+            testimonialNav1.style.backgroundColor = '';
+            testimonialText1.style.display = '';
+            profile2.style.display = '';
+            testimonialNav2.style.backgroundColor = '';
+            testimonialText2.style.display = '';
+            profile3.style.display = '';
+            testimonialNav3.style.backgroundColor = '';
+            testimonialText3.style.display = '';
+            profile4.style.display = 'block';
+            testimonialNav4.style.backgroundColor = '#F1872D';
+            testimonialText4.style.display = 'block';
+            profile5.style.display = '';
+            testimonialNav5.style.backgroundColor = '';
+            testimonialText5.style.display = '';
+            break;
+
+        case 4:
+            profile1.style.display = '';
+            testimonialNav1.style.backgroundColor = '';
+            testimonialText1.style.display = '';
+            profile2.style.display = '';
+            testimonialNav2.style.backgroundColor = '';
+            testimonialText2.style.display = '';
+            profile3.style.display = '';
+            testimonialNav3.style.backgroundColor = '';
+            testimonialText3.style.display = '';
+            profile4.style.display = '';
+            testimonialNav4.style.backgroundColor = '';
+            testimonialText4.style.display = '';
+            profile5.style.display = 'block';
+            testimonialNav5.style.backgroundColor = '#F1872D';
+            testimonialText5.style.display = 'block';
             break;
 
         default:
@@ -462,7 +524,7 @@ const selectProfile = () => {
 
 const goRight = () => {
     profileIndex + 1;
-    if (profileIndex > 1) {
+    if (profileIndex > 3) {
         profileIndex = 0;
     } else {
         profileIndex += 1;
@@ -473,7 +535,7 @@ const goRight = () => {
 const goLeft = () => {
     profileIndex - 1;
     if (profileIndex < 1) {
-        profileIndex = 2;
+        profileIndex = 4;
     } else {
         profileIndex -= 1;
     }
@@ -504,9 +566,21 @@ const openTestimonial3 = () => {
     selectProfile();
 }
 
+const openTestimonial4 = () => {
+    profileIndex = 3;
+    selectProfile();
+}
+
+const openTestimonial5 = () => {
+    profileIndex = 4;
+    selectProfile();
+}
+
 testimonialNav1.addEventListener('click', openTestimonial1);
 testimonialNav2.addEventListener('click', openTestimonial2);
 testimonialNav3.addEventListener('click', openTestimonial3);
+testimonialNav4.addEventListener('click', openTestimonial4);
+testimonialNav5.addEventListener('click', openTestimonial5);
 
 
 

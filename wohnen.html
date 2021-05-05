@@ -49,14 +49,14 @@
             <div class="nav-links">
                 <ul class="flex-sb">
                     <li><a href="index.html">Start</a></li>
-                    <li><a href="wohnen.html">Wohnen</a></li>
+                    <li><a href="wohnen.html#nav__indirect-spacer">Wohnen</a></li>
                     <li><a href="leben.html">ADH-Leben</a></li>
                     <li><a href="lokales.html">Lokales</a></li>
                     <li><a href="kontakt.html">Kontakt</a></li>
                 </ul>
             </div>
 
-            <button class="nav-cta cta" onclick="location.href='bewerbung.php'">Zur Bewerbung</button>
+            <button class="nav-cta cta" onclick="location.href='bewerbung.html'">Zur Bewerbung</button>
 
             <div id="hamburger-icon">
                 <div class="line-1"></div>
@@ -68,7 +68,7 @@
     </div>
 </nav>
 
-<div class="nav__indirect-spacer"></div>
+<div id="nav__indirect-spacer"></div>
 
 
 
@@ -113,7 +113,7 @@
 
         <div class="menu-text text-6">
             <img class="menu-text-drop-6" src="assets/mobile-nav-drop-left.svg" alt="">
-            <a class="link-6" href="bewerbung.php">Zur Bewerbung</a>
+            <a class="link-6" href="bewerbung.html">Zur Bewerbung</a>
             <img class="menu-text-drop-6" src="assets/mobile-nav-drop-right.svg" alt="">
         </div>
     </div>
@@ -258,10 +258,10 @@
             <h2>
                 Mehr als man denkt
                 <span class="span-left">
-                    <img class="explainer-left__drop" src="assets/section-1-drop.svg" alt="">
+                    <img class="explainer-left__drop" src="assets/explainer-left-drop-orange.svg" alt="">
                 </span>
             </h2>
-            <p>Unsere Zimmer haben mehr in sich als man vermutet. Mit einem großen Stauraum unter deinem Bett als auch mit einer Ablage, die sich über dein gesamtes Zimmer zieht kannst du alles verstauen, was du für dein Studium und dein Leben in Mannheim benötigst. </p>
+            <p>Unsere Zimmer haben mehr in sich als man vermutet. Mit einem großen Stauraum unter deinem Bett als auch mit einer Ablage, die sich über dein gesamtes Zimmer zieht, kannst du alles verstauen, was du für dein Studium und dein Leben in Mannheim benötigst. </p>
         </div>
         <img id="heart-icon" src="assets/heart-icon.svg" alt="" data-aos="zoom-in" data-aos-delay="800">
     </div>
@@ -278,7 +278,7 @@
             <h2>
                 Viel Arbeitsfläche für dich
                 <span class="span-right">
-                    <img class="explainer-right__drop" src="assets/explainer-right-drop-wohnen-2.svg" alt="">
+                    <img class="explainer-right__drop" src="assets/explainer-right-drop-red.svg" alt="">
                 </span>
             </h2>
             <p>Dein Schreibtisch erstreckt sich von der einen Zimmerseite zur Anderen, wodurch du viel Platz für deinen Computer, Laptop und Schreibmaterialien hast. In den Regalbrettern an der Wand kannst du deine Lernmaterialien ebenfalls verstauen.</p>
@@ -390,7 +390,7 @@
             <h2>
                 Große Küche für hungrige Bäuche
                 <span class="span-left">
-                    <img class="explainer-left__drop" src="assets/explainer-drop-left-green.svg" alt="">
+                    <img class="explainer-left__drop" src="assets/explainer-left-drop-green.svg" alt="">
                 </span>
             </h2>
             <p>Unsere Küchen besitzen Industriestandards und bieten genug Platz, sodass es nicht zu Koch-Engpässen kommt. Jeder Stock hat neben dem gestellten Equipment ebenfalls eigene Anschaffungen getätigt, wodurch noch die ein oder anderen Zusatzutensilien für dich vorhanden sein können.</p>
@@ -410,7 +410,7 @@
             <h2>
                 Unsere Flur-Gespräche 
                 <span class="span-right">
-                    <img class="explainer-right__drop" src="assets/explainer-right-drop-wohnen-4.svg" alt="">
+                    <img class="explainer-right__drop" src="assets/explainer-right-drop-orange.svg" alt="">
                 </span>
             </h2>
             <p>In unseren durchmischten Stockwerken bietet sich immer die Möglichkeit nach Austausch an. Ob im Flur, Esszimmer oder im Wohnzimmer - es gibt überall viel zu bereden, was unser Haus so lebendig macht.</p>
@@ -447,7 +447,7 @@
                 <div class="table__pricetag flex-c">
                     <div class="pricetag-shadow">
                         <div class="pricetag-card">
-                            <h5>256€<span>/Monat</span></h5>
+                            <h5>257€<span>/Monat</span></h5>
                             <h6>10.5m<sup>2</sup> Zimmer</h6>
                             <p>(10 Stück)</p>
                         </div>
@@ -455,6 +455,10 @@
                     <div class="pricetag-background"></div>
                 </div>
                 <div class="table__list">
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg" alt="">
+                        <p>Internetanschluss</p>
+                    </div>
                     <div class="flex-ai">
                         <img src="assets/pricing-checkmark.svg" alt="">
                         <p>Wasserkosten</p>
@@ -473,15 +477,11 @@
                     </div>
                     <div class="flex-ai">
                         <img src="assets/pricing-checkmark.svg" alt="">
-                        <p>Internetanschluss</p>
-                    </div>
-                    <div class="flex-ai">
-                        <img src="assets/pricing-checkmark.svg" alt="">
                         <p>Fernsehanschluss</p>
                     </div>
                     <div class="flex-ai">
                         <img src="assets/pricing-checkmark.svg" alt="">
-                        <p>Telefonanschluss</p>
+                        <p>Interne Sprechanlage</p>
                     </div>
                 </div>
             </div>
@@ -502,6 +502,10 @@
                 <div class="table__list">
                     <div class="flex-ai">
                         <img src="assets/pricing-checkmark.svg" alt="">
+                        <p>Internetanschluss</p>
+                    </div>
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg" alt="">
                         <p>Wasserkosten</p>
                     </div>
                     <div class="flex-ai">
@@ -518,15 +522,11 @@
                     </div>
                     <div class="flex-ai">
                         <img src="assets/pricing-checkmark.svg" alt="">
-                        <p>Internetanschluss</p>
-                    </div>
-                    <div class="flex-ai">
-                        <img src="assets/pricing-checkmark.svg" alt="">
                         <p>Fernsehanschluss</p>
                     </div>
                     <div class="flex-ai">
                         <img src="assets/pricing-checkmark.svg" alt="">
-                        <p>Telefonanschluss</p>
+                        <p>Interne Sprechanlage</p>
                     </div>
                 </div>
             </div>
@@ -538,12 +538,16 @@
                         <div class="pricetag-card">
                             <h5>288€<span>/Monat</span></h5>
                             <h6>13.5m<sup>2</sup> Zimmer</h6>
-                            <p>(12 Stück)</p>
+                            <p>(3 Stück)</p>
                         </div>
                     </div>
                     <div class="pricetag-background"></div>
                 </div>
                 <div class="table__list">
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg" alt="">
+                        <p>Internetanschluss</p>
+                    </div>
                     <div class="flex-ai">
                         <img src="assets/pricing-checkmark.svg" alt="">
                         <p>Wasserkosten</p>
@@ -562,15 +566,11 @@
                     </div>
                     <div class="flex-ai">
                         <img src="assets/pricing-checkmark.svg" alt="">
-                        <p>Internetanschluss</p>
-                    </div>
-                    <div class="flex-ai">
-                        <img src="assets/pricing-checkmark.svg" alt="">
                         <p>Fernsehanschluss</p>
                     </div>
                     <div class="flex-ai">
                         <img src="assets/pricing-checkmark.svg" alt="">
-                        <p>Telefonanschluss</p>
+                        <p>Interne Sprechanlage</p>
                     </div>
                 </div>
             </div>
@@ -582,12 +582,16 @@
                         <div class="pricetag-card">
                             <h5>330€<span>/Monat</span></h5>
                             <h6>20m<sup>2</sup> Zimmer</h6>
-                            <p>(10 Stück)</p>
+                            <p>(2 Stück)</p>
                         </div>
                     </div>
                     <div class="pricetag-background"></div>
                 </div>
                 <div class="table__list">
+                    <div class="flex-ai">
+                        <img src="assets/pricing-checkmark.svg" alt="">
+                        <p>Internetanschluss</p>
+                    </div>
                     <div class="flex-ai">
                         <img src="assets/pricing-checkmark.svg" alt="">
                         <p>Wasserkosten</p>
@@ -606,15 +610,11 @@
                     </div>
                     <div class="flex-ai">
                         <img src="assets/pricing-checkmark.svg" alt="">
-                        <p>Internetanschluss</p>
-                    </div>
-                    <div class="flex-ai">
-                        <img src="assets/pricing-checkmark.svg" alt="">
                         <p>Fernsehanschluss</p>
                     </div>
                     <div class="flex-ai">
                         <img src="assets/pricing-checkmark.svg" alt="">
-                        <p>Telefonanschluss</p>
+                        <p>Interne Sprechanlage</p>
                     </div>
                 </div>
             </div>
@@ -644,7 +644,7 @@
             <div class="box-zusatz">
                 <img loading ="lazy" src="assets/vertragslaufzeit-icon.svg" alt="">
                 <h3>Vertragslaufzeit</h3>
-                <p>Kann entweder für das Wintersemester (01.09. - 28.02.) oder das Sommerstemester (01.03. - 31.08.) abgeschlossen werden.</p>
+                <p>Kann entweder für das Wintersemester (01.09. - 28.02.) oder das Sommerstemester (01.03. - 31.08.) üblicherweise abgeschlossen werden.</p>
             </div>
 
             <div class="box-zusatz">
@@ -686,7 +686,7 @@
             </div>
             <div class="application-cta-flex">
                 <div class="application-cta">
-                    <button onclick="location.href='bewerbung.php'">Zur Bewerbung</button>
+                    <button onclick="location.href='bewerbung.html'">Zur Bewerbung</button>
                     <img class="application-arrow" src="assets/twisted-arrow.svg" alt="">
                 </div>
             </div>
@@ -704,13 +704,13 @@
                 <h5>Leben im ADH</h6>
                 <a href="wohnen.html">Wohnen & Preise</a>
                 <br>
-                <a href="bewerbung.php">Bewerbung</a>
+                <a href="bewerbung.html">Bewerbung</a>
                 <br>
                 <a href="leben.html">Leben im ADH</a>
                 <br>
                 <a href="lokales.html">Lokales & Wissenswertes</a>
                 <br>
-                <a href="bewerbung.php#q-and-a-section">FAQ</a>
+                <a href="bewerbung.html#q-and-a-section">FAQ</a>
             </div>
 
             <div class="über-footer-section">

@@ -28,7 +28,10 @@
     
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="scripts/accordon.js" async></script>
+    <script src="scripts/accordion.js" async></script>
+
+    <!-- Couch CMS -->
+    <cms:load_edit />
 </head>
 
 
@@ -63,7 +66,7 @@
                 </ul>
             </div>
 
-            <button class="nav-cta cta" onclick="location.href='bewerbung.php'">Zur Bewerbung</button>
+            <button class="nav-cta cta" onclick="location.href='#nav__indirect-spacer'">Zur Bewerbung</button>
 
             <div id="hamburger-icon">
                 <div class="line-1"></div>
@@ -75,7 +78,7 @@
     </div>
 </nav>
 
-<div class="nav__indirect-spacer"></div>
+<div id="nav__indirect-spacer"></div>
 
 
 
@@ -120,7 +123,7 @@
 
         <div class="menu-text text-6">
             <img class="menu-text-drop-6" src="assets/mobile-nav-drop-left.svg" alt="">
-            <a class="link-6" href="bewerbung.php">Zur Bewerbung</a>
+            <a class="link-6" href="bewerbung.html">Zur Bewerbung</a>
             <img class="menu-text-drop-6" src="assets/mobile-nav-drop-right.svg" alt="">
         </div>
     </div>
@@ -141,7 +144,7 @@
     </div>
 
     <div class="header__image-wrapper flex-c">
-        <img class="header__image--bewerbung" src="assets/placeholder.png" alt="">
+        <img class="header__image--bewerbung" src="assets/wasserturm.png" alt="">
         <div class="header__decoration"></div>
     </div>
 </header>
@@ -177,7 +180,7 @@
                 <div class="wrapper-content-1">
                     <img class="icon-1" src="assets/anleitung-icon-1.svg" alt="">
                     <h4>Unterlagen zusenden</h4>
-                    <p>Um für dich für unser Bewerbungsverfahren anzumelden benötigen wir lediglich deinen vollständig ausgefüllten Lebenslauf inklusive Foto als PDF-Datei. Wie du deinen Lebenslauf gestaltest, ist dabei dir überlassen.</p>
+                    <p>Um für dich für unser Bewerbungsverfahren anzumelden benötigen wir lediglich deinen vollständig ausgefüllten Lebenslauf, ein Foto als PDF-Datei sowie deine ausgefüllte Bewerbungsvorlage, die du weiter unten findest.</p>
                     <br>
                     <p class="email-link">Einsendung an: <a class="email-link" href="mailto:heimleitung@alfred-delp-haus.de"> heimleitung@alfred-delp-haus.de</a></p>
                 </div>
@@ -206,11 +209,12 @@
         </div>
     </div>
 
-    <cms:editable name='main_content' type='richtext'>
-        <div class="anleitung-update-section">
-            <p>Aktuell kann man sich noch für das SS 2021 bewerben.</p>
+    
+        <div class="anleitung-update-section flex-c">
+            <cms:editable name='main_content' type='richtext'>
+            <p>Aktuell kann man sich noch für das FSS 2021 bewerben.</p>
+        </cms:editable>
         </div>
-    </cms:editable>
 </section>
 
 
@@ -323,13 +327,13 @@
                 <h5>Leben im ADH</h6>
                 <a href="wohnen.html">Wohnen & Preise</a>
                 <br>
-                <a href="bewerbung.php">Bewerbung</a>
+                <a href="bewerbung.html">Bewerbung</a>
                 <br>
                 <a href="leben.html">Leben im ADH</a>
                 <br>
                 <a href="lokales.html">Lokales & Wissenswertes</a>
                 <br>
-                <a href="bewerbung.php#q-and-a-section">FAQ</a>
+                <a href="bewerbung.html#q-and-a-section">FAQ</a>
             </div>
 
             <div class="über-footer-section">
