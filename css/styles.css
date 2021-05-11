@@ -131,6 +131,10 @@ nav {
     margin: 4px 0px;
 }
 
+#nav-start {
+    color: #F14014;
+}
+
 #mobile-opened {
     display: none;
     background-color: #FFF0E2;
@@ -699,12 +703,20 @@ nav {
     right: 0;
     margin: auto;
     bottom: 0px;
-    width: 70px;
+    width: 120px;
 }
 
 #arrow-indicators img {
     max-width: 80px;
-    opacity: 20%;
+    opacity: 30%;
+}
+
+.swipe-notifier {
+    font-family: "Ink Free";
+    font-size: 1.1rem;
+    color: #F4431A;
+    opacity: 30%;
+    font-weight: 900;
 }
 
 

@@ -6,7 +6,7 @@
     font-family: "Dm Sans", "sans-serif";
     font-size: 16px;
     color: #7B88A8;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 html {
@@ -177,6 +177,14 @@ nav {
     height: 75px;
     width: 100%;
     z-index: -1;
+}
+
+
+#nav-wohnen,
+#nav-leben,
+#nav-lokales,
+#nav-kontakt {
+    color: #F14014;
 }
 
 #mobile-opened {
@@ -880,13 +888,22 @@ padding-bottom: 150px;
 .arrow-indicators {
     display: none;
     justify-content: space-between;
-    width: 70px;
+    width: 120px;
 }
 
 .arrow-indicators img {
     max-width: 80px;
     opacity: 30%;
 }
+
+.swipe-notifier {
+    font-family: "Ink Free";
+    font-size: 1.1rem;
+    color: #F4431A;
+    opacity: 30%;
+    font-weight: 900;
+}
+
 
 
 
@@ -1437,22 +1454,79 @@ align-items: flex-end;
     margin: 0 30px;
 }
 
+.impressum-content h3 {
+    font-size: 2rem;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+.datenschutz-content h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.impressum-content h5,
+.datenschutz-content h5 {
+    font-weight: 900;
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+}
+
+.impressum-content p,
+.datenschutz-content p {
+    font-size: 17px;
+}
+
+.impressum-content ul li,
+.datenschutz-content ul li {
+    list-style-type: initial;
+    font-size: 17px;
+}
+
+.impressum-content ul,
+.datenschutz-content ul {
+    margin-left: 17px;
+}
+
+.impressum-content a,
+.datenschutz-content a,
+.datenschutz-link {
+    text-decoration: underline;
+    text-decoration-color: #F14014;
+    color: #F14014;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.impressum-content-wrapper,
+.datenschutz-content-wrapper {
+    max-width: 1000px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    word-wrap: break-word;
+}
+
+
 
 
 
 /* Page: Links*/
 .links {
     flex-direction: column;
+    margin: 0 30px;
 }
 
 .links h5{
     font-weight: 900;
-    font-size: 1.45rem;
+    font-size: 1.3rem;
 }
 
 .links-generell,
 .links-flaticon {
-    max-width: 1140px;
+    max-width: 1000px;
     width: 100%;
     margin: 0 60px;
 }
@@ -1483,7 +1557,7 @@ align-items: flex-end;
 
 .links-flaticon {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 
@@ -1809,6 +1883,11 @@ align-items: flex-end;
     
     /* Articles */
     .article-wrapper {
+        margin: 0 2vw;
+    }
+
+    /* Links Pages */
+    .links {
         margin: 0 2vw;
     }
 
