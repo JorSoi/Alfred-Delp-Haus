@@ -440,7 +440,7 @@ nav {
 
 .section-text-wrapper-1 p,
 .section-text-wrapper-3 p {
-    font-size: 17px;
+    font-size: 18px;
     margin-top: 10px;
 }
 
@@ -966,6 +966,7 @@ nav {
     width: 80px;
     display: none;
     cursor: pointer;
+
 }
 
 #testimonial-arrow-left-mobile {
