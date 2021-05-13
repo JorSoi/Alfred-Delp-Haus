@@ -1346,6 +1346,7 @@ padding-bottom: 150px;
     color: #F4431A;
     font-size: 60px;
     font-weight: 600;
+    display: inline-block;
 }
 
 .enumerator-wrapper h5 {
