@@ -26,6 +26,8 @@
     
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/purecounter_vanilla.js" async></script>
+    <script src="scripts/script.js" type="module"></script>
     <script src="scripts/script.js" async></script>
 </head>
 
@@ -50,7 +52,7 @@
                 <ul class="flex-sb">
                     <li><a href="index.html">Start</a></li>
                     <li><a href="wohnen.html">Wohnen</a></li>
-                    <li><a href="leben.html">ADH-Leben</a></li>
+                    <li><a id="nav-leben" href="leben.html#nav__indirect-spacer">ADH-Leben</a></li>
                     <li><a href="lokales.html">Lokales</a></li>
                     <li><a href="kontakt.html">Kontakt</a></li>
                 </ul>
@@ -68,7 +70,7 @@
     </div>
 </nav>
 
-<div class="nav__indirect-spacer"></div>
+<div id="nav__indirect-spacer"></div>
 
 
 
@@ -152,8 +154,8 @@
             <img class="brush-intro" src="assets/main-brush.svg" alt="">
         </div>
         <div class="intro-subheader">
-            <p>Das ADH bietet unseren Studenten nicht nur einen Platz zum Wohnen, sondern auch die Gelegenheit, das Leben in der studentischen Selbstverwaltung aktiv mitzugestalten.
-            Es gibt eine Reihe an Ämtern, in denen du mithelfen kannst</p>
+            <p>Das ADH bietet uns nicht nur einen Platz zum Wohnen, sondern auch die Gelegenheit, das Leben in der studentischen Selbstverwaltung aktiv mitzugestalten.
+            Es gibt eine Reihe an Ämtern, in denen du dich entfalten kannst.</p>
         </div>
     </div>
 </section>
@@ -163,14 +165,14 @@
     <div class="enumerator-wrapper flex-sb">
         <div class="enumerator-flexer-1 flex-sb">
             <div class="piece-1">
-                <h2>138</h2>
+                <h2 data-purecounter-start="0" data-purecounter-end="138" data-purecounter-duration="4" data-purecounter-once="true" class="purecounter">138</h2>
                 <h5>Studentenzimmer</h5>
             </div>
     
             <img class="separator-1" src="assets/separator.svg" alt="">
     
             <div class="piece-2">
-                <h2>138</h2>
+                <h2 data-purecounter-start="0" data-purecounter-end="138" data-purecounter-duration="4" data-purecounter-once="true" class="purecounter">138</h2>
                 <h5>Studierende</h5>
             </div>
         </div>
@@ -180,14 +182,14 @@
 
         <div class="enumerator-flexer-1 flex-sb">
             <div class="piece-3">
-                <h2>138</h2>
+                <h2 data-purecounter-start="0" data-purecounter-end="138" data-purecounter-duration="5" data-purecounter-once="true" class="purecounter">138</h2>
                 <h5>Lebensgeschichten</h5>
             </div>
     
             <img class="separator-3" src="assets/separator.svg" alt="">
     
             <div class="piece-4">
-                <h2>100%</h2>
+                <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="5" data-purecounter-once="true">0</h2><h2>%</h2>
                 <h5>Family-Feeling</h5>
             </div>
         </div>
@@ -212,7 +214,7 @@
                     <img class="explainer-left__drop" src="assets/explainer-left-drop-orange.svg" alt="">
                 </span>
             </h2>
-            <p>Um für die richtige Abwechslung im Uni-Altag zu sorgen, hat unser Studentenwohnheim eine eigene Fußballmannschaft, die an Fußballtunieren gegen andere Wohnheime oder Uni-Teams in ihrer Freizeit antritt. Teamplay steht bei den MC-Hammers an höchster Stelle!</p>
+            <p>Um für die richtige Abwechslung im Uni-Altag zu sorgen, hat unser Studentenwohnheim eine eigene Fußballmannschaft, die in ihrer Freizeit bei Fußballtunieren gegen andere Wohnheime oder sogar Uni-Teams antritt. Teamplay steht bei den ADHammerz an höchster Stelle!</p>
         </div>
         <img id="heart-icon" src="assets/heart-icon.svg" alt="" data-aos="zoom-in" data-aos-delay="500">
     </div>
@@ -232,7 +234,7 @@
                     <img class="explainer-right__drop" src="assets/explainer-right-drop-red.svg" alt="">
                 </span>
             </h2>
-            <p>Der Heimsprecher ist der Vertreter aller Bewohner gegenüber der Heimleitung und repräsentiert die Studentische Selbstverwaltung bei den Wohnheimsveranstaltungen. Sie/Er ist für die Koordination der Abläufe im Wohnheim und die Gesamtorganisation des Frühlings-/Oktoberfestes verantwortlich. Zudem hält sie/er Kontakt mit der Katholischen Hochschulgemeinde (KHG).</p>
+            <p>Die Heimsprecher sind die Vertreter aller Bewohner gegenüber der Heimleitung und repräsentieren die Studentische Selbstverwaltung (SSV) bei Wohnheimsveranstaltungen. Er/Sie ist für die Koordination der Abläufe im Wohnheim und die Gesamtorganisation des Frühlings-/Oktoberfestes verantwortlich. Zudem hält er/sie Kontakt mit der Katholischen Hochschulgemeinde (KHG).</p>
         </div>
         <div class="explainer-right__image-wrapper">
             <img loading ="lazy" src="assets/heimsprecher.webp" alt="ADH Zimmerausstattung">
@@ -257,7 +259,7 @@
                     <img class="explainer-left__drop" src="assets/explainer-left-drop-green.svg" alt="">
                 </span>
             </h2>
-            <p>Der Barchef samt Bar-Team tragen die Verantwortung für die hauseigene Bar im Keller. Dort findet wöchentlich ein Barabend statt, bei dem die Barkeeper bereitstehen müssen. Sie regeln die Getränkebestellungen und den Einkauf für das Frühlings-/Oktoberfest. Außerdem können die Bewohner bei ihnen einmal die Woche Wasser kaufen. Die Bar kann auch für externe Veranstaltungen gemietet werden, für deren Organisation sind ebenfalls die Barkeeper verantwortlich.</p>
+            <p>Der Barchef und das Bar-Team tragen die Verantwortung für die hauseigene Bar im Keller. Dort findet wöchentlich ein Barabend statt, bei dem die Barkeeper bereitstehen müssen. Sie regeln die Getränkebestellungen und den Einkauf für das Frühlings-/Oktoberfest. Außerdem können die Bewohner bei ihnen einmal die Woche Wasser kaufen. Die Bar kann auch für externe Veranstaltungen gemietet werden, für deren Organisation sind ebenfalls die Barkeeper verantwortlich.</p>
         </div>
     </div>
     <div class="div-decoration-left leben-3"></div>
@@ -276,7 +278,7 @@
                     <img class="explainer-right__drop" src="assets/explainer-right-drop-orange.svg" alt="">
                 </span>
             </h2>
-            <p>Das Kultur-Team sorgt für den intellektuellen Austausch. Zeil dabei ist es, Ausflüge in Kinos, Opern, Theater, Galerien, Museen oder anderen Ausflugsorten zu gestalten.</p>
+            <p>Das Kultur-Team sorgt für den intellektuellen Austausch. Dabei denkt es sich tolle Gemeinschaftsevents aus und organisiert Ausflüge in z.B. umliegende Städte. Auch lokale Besuche in Kinos, Opern, Theater, Galerien und Museen bleiben selbstverständlich nicht unangetastet.</p>
         </div>
         <div class="explainer-right__image-wrapper">
             <img loading ="lazy" src="assets/kultur.webp" alt="ADH Zimmerausstattung">
@@ -291,17 +293,18 @@
 <section class="explainer-left leben-5 flex-c">
     <div class="explainer-left__wrapper flex-sb" data-aos="fade-up" data-aos-duration="1000">
         <div class="explainer-left__image-wrapper">
-            <img loading ="lazy" src="assets/chor.webp" alt="ADH Fußballmannschaft">
+            <img loading ="lazy" src="assets/chor.webp" alt="ADH Chor">
         </div>
         <div class="explainer-left__text-wrapper leben-5">
             <h6>Musikalisches</h6>
             <h2>
-                Das Orchester und unser Chor
+                Unser Orchester und unser Chor
                 <span class="span-left">
                     <img class="explainer-left__drop" src="assets/explainer-left-drop-red.svg" alt="">
                 </span>
             </h2>
-            <p>Das Orchester trifft sich wöchentlich und musiziert gemeinsam. Einmal pro Semester findet unser Hauskonzert statt, das vom Orchester-Verantwortlichen organisiert wird. Dabei musizieren sowohl das Orchester, der Chor als auch einzelne Bewohner, die ihr musikalisches Können präsentieren möchten. Am Chor können alle interessierte Bewohner teilnehmen.</p>
+            <p>Unser ADH-Chor trifft sich wöchentlich zur Probe und erarbeitet über das Semester hinweg 
+            ein abwechslungsreiches Programm. Am Chor können alle interessierten Mitbewohner und auch Externe teilnehmen. Auch das Orchester musiziert einmal in der Woche gemeinsam. Dabei findet gegen Ende des Semesters unser Hauskonzert statt, das von ADHlern organisiert wird. Dort musizieren der Chor, das Orchester oder auch einzelne Mitbewohner, die ihr musikalisches Können präsentieren wollen.</p>
         </div>
     </div>
     <div class="div-decoration-left leben-5"></div>
@@ -319,7 +322,7 @@
                     <img class="explainer-right__drop" src="assets/explainer-right-drop-orange.svg" alt="">
                 </span>
             </h2>
-            <p>Der Finanzreferent trägt die Verantwortung über die finanziellen Mittel der Studentischen Selbstverwaltung. Zu seinen Aufgabenbereichen gehören unter anderem die Beantragung von Zuschüssen, die Übersicht über die Kassen des Wohnheims und der einzelnen Stockwerke. Zum Abschluss eines jeden Semesters hat er über die Aufwendungen und Erträge, insbesondere des Frühlings-/Oktoberfestes, zu berichten.</p>
+            <p>Unsere Finanzreferenten tragen die Verantwortung über die finanziellen Mittel der Studentischen Selbstverwaltung. Zu ihren Aufgabenbereichen gehören unter anderem die Beantragung von Zuschüssen, die Übersicht über die Kassen des Wohnheims und der einzelnen Stockwerke. Zum Abschluss eines jeden Semesters haben sie über die Aufwendungen und Erträge, insbesondere des Frühlings-/Oktoberfestes, zu berichten.</p>
         </div>
         <div class="explainer-right__image-wrapper">
             <img loading ="lazy" src="assets/finanzreferent.webp" alt="ADH Zimmerausstattung">
@@ -345,7 +348,7 @@
                     <img class="explainer-left__drop" src="assets/explainer-left-drop-green.svg" alt="">
                 </span>
             </h2>
-            <p>Alfi veröffentlicht zum Semesterbeginn die Hauszeitschrift „Alfi“. Dieser beinhaltet ausgefüllte Steckbriefe der Bewohner, Inserate von Geschäften und das Semesterprogramm im ADH. Die Alfi-Redakteure gestalten die Zeitschrift, sammeln die Steckbriefe, suchen Sponsoren und geben abschließend den „Alfi“ in den Druck.</p>
+            <p>Unsere Alfi-Redakteure veröffentlichen zu Semesterbeginn die Hauszeitschrift „Alfi“. Diese beinhaltet ausgefüllte Steckbriefe der Bewohnerinnen und Bewohner, Inserate von Geschäften und das Semesterprogramm im ADH. Das Alfi-Team gestalten die Zeitschrift, sammelt die Steckbriefe, sucht Sponsoren und gibt abschließend die Zeitschrift in den Druck.</p>
         </div>
     </div>
     <div class="div-decoration-left leben-7"></div>
