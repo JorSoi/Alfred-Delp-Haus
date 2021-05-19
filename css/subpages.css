@@ -472,12 +472,26 @@ nav {
     position: relative;
 }
 
-.paper-plane {
+.paper-plane-line {
     position: absolute;
     right: -100px;
     bottom: 0px;
-    z-index: 2;
+    z-index: 3;
     max-width: 280px;
+    width: 100%;
+    height: auto;
+    display: block;
+    user-select: none;
+    -webkit-touch-callout: none;
+    pointer-events: none;
+}
+
+.paper-plane {
+    position: absolute;
+    right: -100px;
+    bottom: 340px;
+    z-index: 2;
+    max-width: 180px;
     width: 100%;
     height: auto;
     display: block;
@@ -496,6 +510,20 @@ nav {
 
 .anleitung-wrapper-3 {
     background-color: #F8EADA;
+}
+
+.flying-mail {
+    position: absolute;
+    top: -30px;
+    left: -100px;
+    z-index: 2;
+    max-width: 270px;
+    width: 100%;
+    height: auto;
+    display: block;
+    user-select: none;
+    -webkit-touch-callout: none;
+    pointer-events: none;
 }
 
 .anleitung-update-section {
@@ -1359,7 +1387,6 @@ padding-bottom: 150px;
 .separator-1,
 .separator-2,
 .separator-3 {
-    opacity: 30%;
     height: 80px;
 }
 
@@ -1410,8 +1437,8 @@ align-items: flex-end;
 }
 
 .enumerator.lokales .piece-4 img {
-    width: 60px;
-    margin-bottom: 10px;
+    width: 58px;
+    margin-bottom: 17px;
 }
 
 .enumerator.lokales .separator-1,
@@ -1634,7 +1661,9 @@ align-items: flex-end;
 
 /* paperplane removal */
 @media (max-width: 1350px) {
-    .paper-plane {
+    .paper-plane-line,
+    .paper-plane,
+    .flying-mail {
         display: none;
     }
 
@@ -2194,6 +2223,10 @@ align-items: flex-end;
         margin-left: 40px
     }
 
+    [data-aos-delay] {
+        transition-delay: 0s !important;
+    }
+
 }
 
 
@@ -2274,11 +2307,14 @@ align-items: flex-end;
         margin-bottom: 0px;
     }
 
-    .piece-1,
+    .piece-1 {
+        margin-top: 30px;
+    }
+
     .piece-2,
     .piece-3,
     .piece-4 {
-        margin-top: 30px;
+        margin-top: 60px;
     }
 
     .separator-1,
