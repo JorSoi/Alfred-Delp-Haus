@@ -590,6 +590,10 @@ nav {
     pointer-events: none;
 }
 
+.formular .cta {
+    width: 150px;
+}
+
 
 
 
@@ -886,6 +890,7 @@ padding-bottom: 150px;
 .room-inventory {
     overflow-x: scroll;
     width: 100%;
+    scrollbar-width: none;
 }
 
 .inventory-wrapper {
@@ -1009,7 +1014,6 @@ padding-bottom: 150px;
     max-width: 450px;
     position: relative;
 }
-
 
 .explainer-left__text-wrapper p,
 .explainer-right__text-wrapper p {
@@ -1283,7 +1287,8 @@ padding-bottom: 150px;
 
 .employee-img {
     width: 240px;
-    height: auto;
+    height: 240px;
+    border-radius: 4px;
 }
 
 .contact-icons {
